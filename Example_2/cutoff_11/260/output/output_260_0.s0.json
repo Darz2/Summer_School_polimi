@@ -1,0 +1,581 @@
+{
+    "initialization": {
+        "components": {
+            "CO2": {
+                "acentricFactor": 0.22394,
+                "bondTypes": [],
+                "cbmcStartingBead": 0,
+                "criticalPressure": 7377300.0,
+                "criticalTemperature": 304.1282,
+                "diagonalizedInertiaVector": [
+                    43.05758528,
+                    43.05758528,
+                    0.0
+                ],
+                "fugacityCoefficient": -0.0,
+                "id": 0,
+                "mass": 43.9988,
+                "molFraction": 1.0,
+                "moveProbabilities": {
+                    "Gibbs swap (CBMC)": 0.39840637450199207,
+                    "Gibbs swap (CFCMC)": 0.0,
+                    "Gibbs volume": 0.003984063745019921,
+                    "Hybrid MC": 0.0,
+                    "Identity change (CBMC)": 0.0,
+                    "Parallel tempering": 0.0,
+                    "Random rotation": 0.0,
+                    "Random translation": 0.0,
+                    "Reinsertion (CBMC)": 0.19920318725099603,
+                    "Rotation": 0.19920318725099603,
+                    "Swap": 0.0,
+                    "Swap (CB/CFCMC)": 0.0,
+                    "Swap (CBMC)": 0.0,
+                    "Swap (CFCMC)": 0.0,
+                    "Translation": 0.19920318725099603,
+                    "Volume change": 0.0,
+                    "Widom": 0.0,
+                    "Widom (CB/CFCMC)": 0.0,
+                    "Widom (CFCMC)": 0.0
+                },
+                "n_atoms": 3,
+                "n_bonds": 0,
+                "name": "CO2",
+                "netCharge": 0.0,
+                "rotationalDOF": 2,
+                "shape": "linear",
+                "swappable": true,
+                "translationalDOF": 3
+            }
+        },
+        "forceField": {
+            "Ewald": {
+                "alpha": 0.26505830360350674,
+                "kVectors": [
+                    8,
+                    8,
+                    8
+                ],
+                "precision": 1e-06
+            },
+            "interactions": [
+                {
+                    "potential": "Lennard-Jones",
+                    "shift [K]": 0.0,
+                    "tailCorrections": true,
+                    "typeA": "C_co2",
+                    "typeB": "C_co2",
+                    "ε/kʙ [K]": 26.999999999999996,
+                    "σ/kʙ [Å]": 2.8
+                },
+                {
+                    "potential": "Lennard-Jones",
+                    "shift [K]": 0.0,
+                    "tailCorrections": true,
+                    "typeA": "C_co2",
+                    "typeB": "O_co2",
+                    "ε/kʙ [K]": 46.18441295502195,
+                    "σ/kʙ [Å]": 2.925
+                },
+                {
+                    "potential": "Lennard-Jones",
+                    "shift [K]": 0.0,
+                    "tailCorrections": true,
+                    "typeA": "O_co2",
+                    "typeB": "O_co2",
+                    "ε/kʙ [K]": 78.99999999999999,
+                    "σ/kʙ [Å]": 3.05
+                }
+            ],
+            "pseudoAtoms": [
+                {
+                    "charge": 0.7,
+                    "mass": 12.0,
+                    "name": "C_co2",
+                    "source": "J. J. Potoff et al., AIChE J. 2001, 47, 1676–1682."
+                },
+                {
+                    "charge": -0.35,
+                    "mass": 15.9994,
+                    "name": "O_co2",
+                    "source": "J. J. Potoff et al., AIChE J. 2001, 47, 1676–1682."
+                }
+            ]
+        },
+        "hardwareInfo": {
+            "compile_date": "Mar 15 2025",
+            "compile_time": "19:39:45",
+            "compiler": "gcc Ubuntu Clang 18.1.3 (1ubuntu1)",
+            "hostname": "c108",
+            "os_arch": "x86_64",
+            "os_release": "6.8.0-58-generic",
+            "os_type": "Linux",
+            "os_version": "#60-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:29:48 UTC 2025",
+            "start_date": "Tue, Jun 03",
+            "start_time": "11:00:00"
+        },
+        "initialConditions": {
+            "beta": 0.004625858529058714,
+            "box": [
+                [
+                    30.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    1.83697019872103e-15,
+                    30.0,
+                    0.0
+                ],
+                [
+                    1.83697019872103e-15,
+                    1.83697019872103e-15,
+                    30.0
+                ]
+            ],
+            "boxAngles": [
+                90.0,
+                90.0,
+                90.0
+            ],
+            "boxLengths": [
+                30.0,
+                30.0,
+                30.0
+            ],
+            "pressure": 0.0,
+            "temperature": 260.0
+        },
+        "reactions": null,
+        "units": {
+            "Boltzmann constant [-]": 0.8314464919307584,
+            "Coulomb potential [K]": 167101.08000665612,
+            "Energy to Kelvin [-]": 1.202724284692786,
+            "Kelvin to energy [-]": 0.8314457542157567,
+            "acceleration [m²/s]": 1.0000000000000002e-08,
+            "charge [C/particle]": 1.60217733e-19,
+            "dielectric constant [s² C²/(kg m³)]": 1.5458657349975193e-05,
+            "diffusion [m²/s]": 1.0000000000000002e-08,
+            "dipole moment [C.m]": 1.60217733e-29,
+            "electric field [V]": 1036427.222447343,
+            "electric potential [V]": 0.00010364272224473431,
+            "energy [J]": 1.6605402000000002e-23,
+            "force [N]": 1.6605402000000002e-13,
+            "length [m]": 1e-10,
+            "mass [kg]": 1.6605402e-27,
+            "polarizability [-]": 1.5458657349975198e-35,
+            "pressure [Pa]": 16605402.0,
+            "temperature": "Kelvin",
+            "time [s]": 1e-12,
+            "velocity [m/s]": 100.0
+        }
+    },
+    "output": {
+        "MCMoveStatistics": {
+            "system": {
+                "CO2": {
+                    "Gibbs swap (CBMC)": {
+                        "accepted": 56114.0,
+                        "all": 298805,
+                        "constructed": 578007.0,
+                        "fraction": 0.09387615120159934,
+                        "maxChange": 0.0,
+                        "total": 597745.0
+                    },
+                    "Reinsertion (CBMC)": {
+                        "accepted": 103247.0,
+                        "all": 149644,
+                        "constructed": 149644.0,
+                        "fraction": 0.6899508166047419,
+                        "maxChange": 0.0,
+                        "total": 149644.0
+                    },
+                    "Rotation": {
+                        "accepted": [
+                            42009.0,
+                            42167.0,
+                            41891.0
+                        ],
+                        "all": 149489,
+                        "constructed": [
+                            49891.0,
+                            49910.0,
+                            49634.0
+                        ],
+                        "fraction": [
+                            0.8417793808235647,
+                            0.8445392457289351,
+                            0.8436411237539019
+                        ],
+                        "maxChange": [
+                            1.5,
+                            1.5,
+                            1.5
+                        ],
+                        "total": [
+                            49905.0,
+                            49929.0,
+                            49655.0
+                        ]
+                    },
+                    "Translation": {
+                        "accepted": [
+                            42340.0,
+                            41997.0,
+                            42266.0
+                        ],
+                        "all": 149748,
+                        "constructed": [
+                            49815.0,
+                            49654.0,
+                            50037.0
+                        ],
+                        "fraction": [
+                            0.8488542272298963,
+                            0.844143836304798,
+                            0.84332974180933
+                        ],
+                        "maxChange": [
+                            1.5,
+                            1.5,
+                            1.5
+                        ],
+                        "total": [
+                            49879.0,
+                            49751.0,
+                            50118.0
+                        ]
+                    }
+                },
+                "system": {
+                    "Gibbs volume": {
+                        "accepted": 4371.0,
+                        "all": 3007,
+                        "constructed": 6031.0,
+                        "fraction": 0.7247554302769027,
+                        "maxChange": 0.03736451224407868,
+                        "total": 6031.0
+                    }
+                }
+            }
+        },
+        "cpuTimings": {
+            "CO2": {
+                "Gibbs swap (CBMC)": {
+                    "Ewald": 13.169478000079298,
+                    "NonEwald": 104.51154000002958,
+                    "Overhead": 0.4461119998998683,
+                    "Tail": 0.9975529999952372,
+                    "Total": 119.12468300000398
+                },
+                "Reinsertion (CBMC)": {
+                    "Ewald": 3.3828910000026364,
+                    "NonEwald": 8.638804999998717,
+                    "Overhead": 0.2647089999979215,
+                    "Total": 12.286404999999275
+                },
+                "Rotation": {
+                    "Ewald": 3.356316000001503,
+                    "ExternalField-Molecule": 0.005113000000000355,
+                    "Framework-Molecule": 0.005414000000000394,
+                    "Molecule-Molecule": 0.7846529999992913,
+                    "Overhead": 0.34092800000097845,
+                    "Total": 4.492424000001773
+                },
+                "Translation": {
+                    "Ewald": 3.3563880000013935,
+                    "ExternalField-Molecule": 0.0050850000000003505,
+                    "Framework-Molecule": 0.008014000000000571,
+                    "Molecule-Molecule": 0.7908959999992771,
+                    "Overhead": 0.3379140000010985,
+                    "Total": 4.49829700000177
+                }
+            },
+            "equilibration": 0.0,
+            "initialization": 116.41338599999986,
+            "production": 362.71669699999865,
+            "summedSystemsAndComponents": {
+                "Gibbs swap (CBMC)": {
+                    "Ewald": 25.4649980001414,
+                    "NonEwald": 183.39828100005855,
+                    "Overhead": 0.855387999810707,
+                    "Tail": 1.7621149999906813,
+                    "Total": 211.48078200000134
+                },
+                "Gibbs volume": {
+                    "Ewald": 8.374405999999992,
+                    "NonEwald": 20.02765799999998,
+                    "Tail": 0.8703609999999782,
+                    "Total": 29.464258000000026
+                },
+                "Reinsertion (CBMC)": {
+                    "Ewald": 7.900638000006941,
+                    "NonEwald": 69.62853199999823,
+                    "Overhead": 0.36142299999531247,
+                    "Total": 77.89059300000048
+                },
+                "Rotation": {
+                    "Ewald": 8.10604200000072,
+                    "ExternalField-Molecule": 0.010352000000000725,
+                    "Framework-Molecule": 0.010889000000000789,
+                    "Molecule-Molecule": 9.092997000001057,
+                    "Overhead": 0.6484229999929845,
+                    "Total": 17.868702999994763
+                },
+                "Translation": {
+                    "Ewald": 8.1311030000006,
+                    "ExternalField-Molecule": 0.010270000000000713,
+                    "Framework-Molecule": 0.016059000000001107,
+                    "Molecule-Molecule": 9.187008000000835,
+                    "Overhead": 0.630803999993562,
+                    "Total": 17.975243999994998
+                },
+                "allSummed": 361.9628299999916,
+                "energyPressureSampling": 6.8070189999999995,
+                "overhead": 0.7538670000070624,
+                "productionSimulationTime": 362.71669699999865,
+                "propertySampling": 0.47623099999996327
+            },
+            "system": {
+                "Gibbs swap (CBMC)": {
+                    "Ewald": 13.169478000079298,
+                    "NonEwald": 104.51154000002958,
+                    "Tail": 0.9975529999952372,
+                    "Total": 119.12468300000398
+                },
+                "Gibbs volume": {
+                    "Ewald": 4.180638000000004,
+                    "NonEwald": 9.982013000000011,
+                    "Tail": 0.4348229999999896,
+                    "Total": 14.692687000000017
+                },
+                "energyPressureSampling": 0.39417699999999983,
+                "propertySampling": 0.23081099999998383
+            },
+            "total": 479.1300830000013
+        },
+        "drift": {
+            "Ewald Fourier [K]": 8.204035234662929e-13,
+            "Ewald exclusion [K]": 0.0,
+            "Ewald self [K]": 0.0,
+            "Total potential energy [K]": -12.964281422786526,
+            "Van der Waals (Tail) [K]": -8.545870036107217e-15,
+            "dU/dlambda Ewald [K]": 0.0,
+            "dU/dlambda Real [K]": 0.0,
+            "dU/dlambda VDW [K]": 0.0,
+            "external field Real [K]": 0.0,
+            "external field VDW [K]": 0.0,
+            "framework-molecule Rea [K]": 0.0,
+            "framework-molecule VDW [K]": 0.0,
+            "intra Coulombic [K]": 0.0,
+            "intra VDW [K]": 0.0,
+            "molecule-molecule Real [K]": -0.7361636321370696,
+            "molecule-molecule VDW [K]": -12.228117790650268,
+            "polarization [K]": 0.0
+        },
+        "recomputedEnergies": {
+            "Ewald Fourier [K]": 1621.4556858530918,
+            "Ewald exclusion [K]": 530931.3173711025,
+            "Ewald self [K]": -532636.6809624669,
+            "Total potential energy [K]": -2714.0429925508133,
+            "Van der Waals (Tail) [K]": -41.194134996851155,
+            "dU/dlambda Ewald [K]": 0.0,
+            "dU/dlambda Real [K]": 0.0,
+            "dU/dlambda VDW [K]": 0.0,
+            "external field Real [K]": 0.0,
+            "external field VDW [K]": 0.0,
+            "framework-molecule Rea [K]": 0.0,
+            "framework-molecule VDW [K]": 0.0,
+            "intra Coulombic [K]": 0.0,
+            "intra VDW [K]": 0.0,
+            "molecule-molecule Real [K]": -550.0904593030857,
+            "molecule-molecule VDW [K]": -2038.8504927396248,
+            "polarization [K]": 0.0
+        },
+        "runningEnergies": {
+            "Ewald Fourier [K]": 1621.4556858530927,
+            "Ewald exclusion [K]": 530931.3173711025,
+            "Ewald self [K]": -532636.6809624669,
+            "Total potential energy [K]": -2727.007273973653,
+            "Van der Waals (Tail) [K]": -41.19413499685116,
+            "dU/dlambda Ewald [K]": 0.0,
+            "dU/dlambda Real [K]": 0.0,
+            "dU/dlambda VDW [K]": 0.0,
+            "external field Real [K]": 0.0,
+            "external field VDW [K]": 0.0,
+            "framework-molecule Rea [K]": 0.0,
+            "framework-molecule VDW [K]": 0.0,
+            "intra Coulombic [K]": 0.0,
+            "intra VDW [K]": 0.0,
+            "molecule-molecule Real [K]": -550.8266229352228,
+            "molecule-molecule VDW [K]": -2051.078610530275,
+            "polarization [K]": 0.0
+        }
+    },
+    "properties": {
+        "averageEnergies": {
+            "Molecule-Molecule": {
+                "CO2-CO2": {
+                    "coulombFourier": {
+                        "block": [
+                            -204.5996416366832,
+                            -159.2115500771152,
+                            -127.2621928321704,
+                            -179.92064490406187,
+                            -140.2201561687235
+                        ],
+                        "confidence": 38.387354834401464,
+                        "mean": -162.24283712375083
+                    },
+                    "coulombReal": {
+                        "block": [
+                            -1889.4786220651006,
+                            -1652.1439932708465,
+                            -1405.7094443280075,
+                            -2074.868654610026,
+                            -1382.9888769930558
+                        ],
+                        "confidence": 374.51523847346385,
+                        "mean": -1681.0379182534073
+                    },
+                    "tailCorrection": {
+                        "block": [
+                            -111.87313365405271,
+                            -90.72528089064281,
+                            -80.64396306291007,
+                            -116.34282183250043,
+                            -81.24677792980668
+                        ],
+                        "confidence": 21.02200511127298,
+                        "mean": -96.16639547398256
+                    },
+                    "total": {
+                        "block": [
+                            -8295.87725688102,
+                            -6944.9771909882475,
+                            -6246.043859257894,
+                            -8893.569051110238,
+                            -6221.660816139999
+                        ],
+                        "confidence": 1511.4329549383945,
+                        "mean": -7320.425634875479
+                    },
+                    "vanDerWaals": {
+                        "block": [
+                            -6089.92585952518,
+                            -5042.89636674964,
+                            -4632.428259034809,
+                            -6522.4369297636495,
+                            -4617.2050050484095
+                        ],
+                        "confidence": 1086.4610494625392,
+                        "mean": -5380.978484024338
+                    }
+                }
+            },
+            "totalEnergy": {
+                "block": [
+                    -4147.93862844051,
+                    -3472.4885954941237,
+                    -3123.021929628947,
+                    -4446.784525555119,
+                    -3110.8304080699995
+                ],
+                "confidence": 755.7164774691972,
+                "mean": -3660.2128174377394
+            }
+        },
+        "averageEnthalpy": {
+            "CO2": {
+                "block": [
+                    -496.2481750751637,
+                    -490.2917988718966,
+                    -464.6176700896684,
+                    -497.5867762804203,
+                    -477.78609311982194
+                ],
+                "confidence": {
+                    "[K]": 17.33570154716436,
+                    "[kJ/mol]": 0.1441370823601521
+                },
+                "mean": {
+                    "[K]": -485.3061026873942,
+                    "[kJ/mol]": -4.035060565770951
+                },
+                "warning": "Warning: Recompute value of the total enthalpy of adsorption by hand. Need to subtract the ideal-gas energy"
+            }
+        },
+        "averagePressure": {
+            "averagePressureTensor": {
+                "confidence": [
+                    [
+                        210221.59816478853,
+                        68600.16768649331,
+                        69274.77054302911
+                    ],
+                    [
+                        68600.16768649331,
+                        247572.9858542893,
+                        117674.05221611244
+                    ],
+                    [
+                        69274.77054302911,
+                        117674.05221611244,
+                        375642.43088869937
+                    ]
+                ],
+                "mean": [
+                    [
+                        2294401.538536414,
+                        6855.516401268834,
+                        -47633.97873150264
+                    ],
+                    [
+                        6855.516401268834,
+                        2270576.41139864,
+                        -26693.253922482087
+                    ],
+                    [
+                        -47633.97873150264,
+                        -26693.253922482087,
+                        2231809.134838027
+                    ]
+                ]
+            },
+            "excessPressure": {
+                "block": [
+                    -698474.8957639841,
+                    -563531.1107359193,
+                    -522791.3387648979,
+                    -624247.4185231825,
+                    -586986.341413315
+                ],
+                "confidence": 82682.41447792028,
+                "mean": -599206.2210402598
+            },
+            "idealGasPressure": {
+                "block": [
+                    3115276.045062873,
+                    2804042.9597640494,
+                    2611491.041785474,
+                    3160241.2655207217,
+                    2632958.2676899815
+                ],
+                "confidence": 323514.9170850025,
+                "mean": 2864801.91596462
+            },
+            "pressure": {
+                "block": [
+                    2416801.149298889,
+                    2240511.84902813,
+                    2088699.703020576,
+                    2535993.846997539,
+                    2045971.9262766663
+                ],
+                "confidence": 260511.17649831413,
+                "mean": 2265595.6949243606
+            }
+        }
+    },
+    "seed": 2443534800,
+    "version": "3.0.4"
+}

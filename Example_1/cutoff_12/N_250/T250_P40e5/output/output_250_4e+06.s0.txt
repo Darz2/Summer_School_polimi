@@ -1,0 +1,3285 @@
+Compiler and run-time data
+===============================================================================
+RASPA 3.0.4
+
+Random seed: 1906346695
+
+Compiled as a 64-bits application
+Compiler: gcc Ubuntu Clang 18.1.3 (1ubuntu1)
+Compile Date = Mar 15 2025, Compile Time = 19:39:45
+
+2025-06-02 12:33:28.184949
+Simulation started on Mon, Jun 02
+The start time was 12:33:00
+
+Hostname:    c060
+OS type:     Linux on x86_64
+OS release:  6.8.0-58-generic
+OS version:  #60-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:29:48 UTC 2025
+
+
+Mutual consistent basic set of units:
+===============================================================================
+
+Unit of temperature: 1 [K]
+Unit of length:      1e-10 [m]
+Unit of time:        1e-12 [s]
+Unit of mass:        1.6605402e-27 [kg]
+Unit of charge:      1.60217733e-19 [C/particle]
+
+
+Boltzmann constant (internal units):          0.8314464919307584 [-]
+represents conversion from energy (internal units) to temperature (in Kelvin)
+
+Derived units and their conversion factors:
+===============================================================================
+
+Unit of energy:                           1.6605402000000002e-23 [J]
+Unit of energy:                           10.000008872307538 [J.mol⁻¹]
+Unit of velocity:                         100 [m.s⁻¹]
+Unit of force:                            1.6605402000000002e-13 [N]
+Unit of diffusion:                        1.0000000000000002e-08 [m².s⁻¹]
+Unit of acceleration:                     1.0000000000000002e-08 [m².s⁻¹]
+Unit of torque:                           1.6605402000000002e-23 [N.m]
+Unit of pressure:                         16605402 [Pa]
+Unit of volume:                           1e-30 [m³]
+Unit of density:                          1660.5402 [kg.m⁻³]
+Unit of dynamic viscosity:                1.6605401999999997e-05 [N.s.m⁻²]
+Unit of enthalpy:                         1.6605402000000002e-23 [J]
+Unit of polarizability:                   1.5458657349975198e-35 [-]
+Unit of Coulomb potential:                167101.08000665612 [K]
+Unit of dielectric constant:              1.5458657349975193e-05 [s².C².kg⁻¹.m⁻³]
+Unit of dipole moment:                    1.60217733e-29 [C.m]
+Unit of Debye:                            4.803206799099162 [C.m]
+Unit of electric potential:               0.00010364272224473431 [V]
+Unit of electric field:                   1036427.222447343 [V.m⁻¹]
+Unit of isothermal compressibility:       6.02213665167516e-08 [Pa⁻¹]
+Unit of heat capacity:                    10.000008872307538 [J.mol⁻¹.K⁻¹]
+Unit of volumetric expansion coefficient: 1 [K⁻¹]
+
+
+Internal conversion factors:
+===============================================================================
+
+Energy (internal units) to Kelvin:      1.202724284692786 [-]
+Kelvin to energy (internal units):      0.8314457542157567 [-]
+
+
+System definitions
+===============================================================================
+
+Temperature:          250 [K]
+Beta:                 0.0048108928702210625 [-]
+Pressure:             4e+06 [Pa]
+Helium void fraction: 1 [-]
+
+Box:      30.00000   0.00000   0.00000
+           0.00000  30.00000   0.00000
+           0.00000   0.00000  30.00000
+Lengths:  30.00000  30.00000  30.00000
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+
+
+Property measurement settings
+===============================================================================
+
+
+
+
+Pseudo-atoms
+===============================================================================
+
+  0 - C_co2    framework-atom: false
+  1 - O_co2    framework-atom: false
+
+  0 - C_co2    mass: 12.00000, charge:  0.70000
+  1 - O_co2    mass: 15.99940, charge: -0.35000
+
+  0 - C_co2    polarizability:  0.00000
+  1 - O_co2    polarizability:  0.00000
+
+  0 - J. J. Potoff et al., AIChE J. 2001, 47, 1676–1682.
+  1 - J. J. Potoff et al., AIChE J. 2001, 47, 1676–1682.
+
+Force field status
+===============================================================================
+
+Cutoff Framework-Molecule VDW:  12.00000 [Å]
+Cutoff Molecule-Molecule VDW:   12.00000 [Å]
+Cutoff Coulomb:                 12.00000 [Å]
+
+Overlap-criteria VDW:           1.000000e+05 [K]
+
+C_co2    - C_co2    Lennard-Jones p₀/kʙ:  27.00000 [K], p₁:  2.80000 [Å]
+                                  shift:   0.00000 [K], tailcorrections: true
+C_co2    - O_co2    Lennard-Jones p₀/kʙ:  46.18441 [K], p₁:  2.92500 [Å]
+                                  shift:   0.00000 [K], tailcorrections: true
+O_co2    - O_co2    Lennard-Jones p₀/kʙ:  79.00000 [K], p₁:  3.05000 [Å]
+                                  shift:   0.00000 [K], tailcorrections: true
+
+Ewald precision: 1e-06
+Ewald alpha: 0.26505830360350674
+Ewald k-vectors: 8 8 8
+
+
+Component definitions
+===============================================================================
+
+Component 0 [CO2]
+
+    Type: Adsorbate
+
+    Critical temperature:  304.1282 [K]
+    Critical pressure:     7377300 [Pa]
+    Acentric factor:       0.22394 [-]
+
+    Mol-fraction:                 1 [-]
+    Swappable:                   false
+
+    Mass:                         43.9988 [-]
+    Bulk fluid density:           0 [-]
+    Compressibility:              0 [-]
+    Excess molecules:             0 [-]
+
+    Number Of Atoms:    3
+    CBMC starting bead: 0
+      0: O_co2  position  0.00000 -0.00000  1.16000, charge -0.35000
+      1: C_co2  position  0.00000 -0.00000  0.00000, charge  0.70000
+      2: O_co2  position  0.00000 -0.00000 -1.16000, charge -0.35000
+    Diagonalized inertia-vector:      43.05758528 43.05758528 0.00000000
+    Translational degrees of freedom: 3
+    Rotational degrees of freedom:    2
+    Shape of the molecule is: 'Linear'
+    Net-charge:        0.00000000 [e]
+
+    Move probabilities:
+    Translation:                   0.331126 [-]
+    Random translation:            0.000000 [-]
+    Rotation:                      0.331126 [-]
+    Random rotation:               0.000000 [-]
+    Volume change:                 0.006623 [-]
+    Reinsertion (CBMC):            0.331126 [-]
+    Identity change (CBMC):        0.000000 [-]
+    Swap:                          0.000000 [-]
+    Swap (CBMC):                   0.000000 [-]
+    Swap (CFCMC):                  0.000000 [-]
+    Swap (CB/CFCMC):               0.000000 [-]
+    Gibbs volume:                  0.000000 [-]
+    Gibbs swap (CBMC):             0.000000 [-]
+    Gibbs swap (CFCMC):            0.000000 [-]
+    Widom:                         0.000000 [-]
+    Widom (CFCMC):                 0.000000 [-]
+    Widom (CB/CFCMC):              0.000000 [-]
+    Parallel tempering:            0.000000 [-]
+    Hybrid MC:                     0.000000 [-]
+
+    number of blocking-pockets: 0
+
+    number of bonds: 0
+
+
+
+
+
+Number of pseudo-atoms
+===============================================================================
+
+Component   0 (CO2)
+-------------------------------------------------------------------------------
+    index   0 (C_co2): 250 atoms
+    index   1 (O_co2): 500 atoms
+
+Total number of pseudo-atoms:
+-------------------------------------------------------------------------------
+    index   0 (C_co2): 250 atoms
+    index   1 (O_co2): 500 atoms
+
+
+
+
+Energy status Recomputed from scratch
+===============================================================================
+
+Total potential energy/kʙ       -6.393731e+04 [K]
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -3.215269e+04 [K]
+    molecule-molecule Real/kʙ   -2.621884e+04 [K]
+    Van der Waals (Tail)/kʙ     -4.298852e+03 [K]
+    Ewald Fourier/kʙ             1.343448e+04 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+
+
+
+Initialization: Current cycle: 0 out of 1000
+===============================================================================
+
+Box:      30.65644   0.00000   0.00000
+           0.00000  30.65644   0.00000
+           0.00000   0.00000  30.65644
+Lengths:  30.65644  30.65644  30.65644
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    8.677101e-03 molec/A^3
+    density:           6.339638e+02 kg/m^3
+
+Total potential energy/kʙ       -1.470309e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -1.123516e+05 [K]
+    molecule-molecule Real/kʙ   -2.813285e+04 [K]
+    Van der Waals (Tail)/kʙ     -4.028570e+03 [K]
+    Ewald Fourier/kʙ             1.218348e+04 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 100 out of 1000
+===============================================================================
+
+Box:      28.18905   0.00000   0.00000
+           0.00000  28.18905   0.00000
+           0.00000   0.00000  28.18905
+Lengths:  28.18905  28.18905  28.18905
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.116089e-02 molec/A^3
+    density:           8.154338e+02 kg/m^3
+
+Total potential energy/kʙ       -3.029025e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.167726e+05 [K]
+    molecule-molecule Real/kʙ   -7.448000e+04 [K]
+    Van der Waals (Tail)/kʙ     -5.181733e+03 [K]
+    Ewald Fourier/kʙ             8.233260e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 200 out of 1000
+===============================================================================
+
+Box:      26.95476   0.00000   0.00000
+           0.00000  26.95476   0.00000
+           0.00000   0.00000  26.95476
+Lengths:  26.95476  26.95476  26.95476
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.276538e-02 molec/A^3
+    density:           9.326602e+02 kg/m^3
+
+Total potential energy/kʙ       -3.344620e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.393993e+05 [K]
+    molecule-molecule Real/kʙ   -8.196477e+04 [K]
+    Van der Waals (Tail)/kʙ     -5.926657e+03 [K]
+    Ewald Fourier/kʙ             7.530106e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 300 out of 1000
+===============================================================================
+
+Box:      26.50290   0.00000   0.00000
+           0.00000  26.50290   0.00000
+           0.00000   0.00000  26.50290
+Lengths:  26.50290  26.50290  26.50290
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.342950e-02 molec/A^3
+    density:           9.811819e+02 kg/m^3
+
+Total potential energy/kʙ       -3.521638e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.573959e+05 [K]
+    molecule-molecule Real/kʙ   -8.110770e+04 [K]
+    Van der Waals (Tail)/kʙ     -6.234992e+03 [K]
+    Ewald Fourier/kʙ             7.276200e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 400 out of 1000
+===============================================================================
+
+Box:      26.04896   0.00000   0.00000
+           0.00000  26.04896   0.00000
+           0.00000   0.00000  26.04896
+Lengths:  26.04896  26.04896  26.04896
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.414388e-02 molec/A^3
+    density:           1.033376e+03 kg/m^3
+
+Total potential energy/kʙ       -3.735162e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.759048e+05 [K]
+    molecule-molecule Real/kʙ   -8.302308e+04 [K]
+    Van der Waals (Tail)/kʙ     -6.566665e+03 [K]
+    Ewald Fourier/kʙ             6.679713e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 500 out of 1000
+===============================================================================
+
+Box:      25.69527   0.00000   0.00000
+           0.00000  25.69527   0.00000
+           0.00000   0.00000  25.69527
+Lengths:  25.69527  25.69527  25.69527
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.473602e-02 molec/A^3
+    density:           1.076639e+03 kg/m^3
+
+Total potential energy/kʙ       -3.790894e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.805532e+05 [K]
+    molecule-molecule Real/kʙ   -8.362481e+04 [K]
+    Van der Waals (Tail)/kʙ     -6.841582e+03 [K]
+    Ewald Fourier/kʙ             6.631604e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 600 out of 1000
+===============================================================================
+
+Box:      26.36261   0.00000   0.00000
+           0.00000  26.36261   0.00000
+           0.00000   0.00000  26.36261
+Lengths:  26.36261  26.36261  26.36261
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.364505e-02 molec/A^3
+    density:           9.969304e+02 kg/m^3
+
+Total potential energy/kʙ       -3.590348e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.631422e+05 [K]
+    molecule-molecule Real/kʙ   -8.152411e+04 [K]
+    Van der Waals (Tail)/kʙ     -6.335067e+03 [K]
+    Ewald Fourier/kʙ             6.668008e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 700 out of 1000
+===============================================================================
+
+Box:      25.78305   0.00000   0.00000
+           0.00000  25.78305   0.00000
+           0.00000   0.00000  25.78305
+Lengths:  25.78305  25.78305  25.78305
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.458603e-02 molec/A^3
+    density:           1.065681e+03 kg/m^3
+
+Total potential energy/kʙ       -3.794528e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.732296e+05 [K]
+    molecule-molecule Real/kʙ   -9.032496e+04 [K]
+    Van der Waals (Tail)/kʙ     -6.771945e+03 [K]
+    Ewald Fourier/kʙ             5.575184e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 800 out of 1000
+===============================================================================
+
+Box:      25.82382   0.00000   0.00000
+           0.00000  25.82382   0.00000
+           0.00000   0.00000  25.82382
+Lengths:  25.82382  25.82382  25.82382
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.451705e-02 molec/A^3
+    density:           1.060641e+03 kg/m^3
+
+Total potential energy/kʙ       -3.815809e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.747545e+05 [K]
+    molecule-molecule Real/kʙ   -9.261229e+04 [K]
+    Van der Waals (Tail)/kʙ     -6.739918e+03 [K]
+    Ewald Fourier/kʙ             7.227214e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Initialization: Current cycle: 900 out of 1000
+===============================================================================
+
+Box:      25.94895   0.00000   0.00000
+           0.00000  25.94895   0.00000
+           0.00000   0.00000  25.94895
+Lengths:  25.94895  25.94895  25.94895
+Angles:   90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component   0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:         2.500000e+02 molecules
+    number density:    1.430805e-02 molec/A^3
+    density:           1.045371e+03 kg/m^3
+
+Total potential energy/kʙ       -3.770408e+05 [K]
+-------------------------------------------------------------------------------
+    external field VDW/kʙ        0.000000e+00 [K]
+    external field Real/kʙ       0.000000e+00 [K]
+    framework-molecule VDW/kʙ    0.000000e+00 [K]
+    framework-molecule Real/kʙ   0.000000e+00 [K]
+    molecule-molecule VDW/kʙ    -2.734493e+05 [K]
+    molecule-molecule Real/kʙ   -8.861112e+04 [K]
+    Van der Waals (Tail)/kʙ     -6.642884e+03 [K]
+    Ewald Fourier/kʙ             6.363904e+03 [K]
+    Ewald self/kʙ               -4.591696e+06 [K]
+    Ewald exclusion/kʙ           4.576994e+06 [K]
+    intra VDW/kʙ                 0.000000e+00 [K]
+    intra Coulombic/kʙ           0.000000e+00 [K]
+    polarization/kʙ              0.000000e+00 [K]
+    dU/dlambda VDW/kʙ            0.000000e+00 [K]
+    dU/dlambda Real/kʙ           0.000000e+00 [K]
+    dU/dlambda Ewald/kʙ          0.000000e+00 [K]
+
+
+Current cycle: 0 out of 5000
+===============================================================================
+
+Box:      26.40068   0.00000   0.00000  Average:  26.40068   0.00000   0.00000
+           0.00000  26.40068   0.00000             0.00000  26.40068   0.00000
+           0.00000   0.00000  26.40068             0.00000   0.00000  26.40068
+Lengths:  26.40068  26.40068  26.40068  Average:  26.40068  26.40068  26.40068
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.358610e-02 molec./A^3 (1.358610e-02 +/- 0.000000e+00)
+    density:        9.926240e+02 kg/m^3     (9.926240e+02 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 4.6894e+02  0.0000e+00  0.0000e+00 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 0.0000e+00  4.6894e+02  0.0000e+00 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 0.0000e+00  0.0000e+00  4.6894e+02 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.689414e+02 +/ 0.000000e+00 [bar]
+Excess pressure:      0.000000e+00 +/ 0.000000e+00 [bar]
+Pressure:             4.689414e+02 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.540971e+05 (-3.540971e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.611028e+05 (-2.611028e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.307702e+03 (-6.307702e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -7.822898e+04 (-7.822898e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.457566e+03 (-8.457566e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 100 out of 5000
+===============================================================================
+
+Box:      26.14886   0.00000   0.00000  Average:  26.08092   0.00000   0.00000
+           0.00000  26.14886   0.00000             0.00000  26.08092   0.00000
+           0.00000   0.00000  26.14886             0.00000   0.00000  26.08092
+Lengths:  26.14886  26.14886  26.14886  Average:  26.08092  26.08092  26.08092
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.398240e-02 molec./A^3 (1.409412e-02 +/- 0.000000e+00)
+    density:        1.021578e+03 kg/m^3     (1.029741e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.9840e+02 -1.2472e+01 -4.5168e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.2472e+01  4.2956e+01  2.6794e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-4.5168e+01  2.6794e+01  7.1352e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.864763e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -3.822415e+02 +/ 0.000000e+00 [bar]
+Pressure:             1.042349e+02 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.640081e+05 (-3.638584e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.639445e+05 (-2.660636e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.491691e+03 (-6.533991e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.569013e+04 (-8.342378e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -7.881703e+03 (-7.836958e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 200 out of 5000
+===============================================================================
+
+Box:      25.81143   0.00000   0.00000  Average:  25.98720   0.00000   0.00000
+           0.00000  25.81143   0.00000             0.00000  25.98720   0.00000
+           0.00000   0.00000  25.81143             0.00000   0.00000  25.98720
+Lengths:  25.81143  25.81143  25.81143  Average:  25.98720  25.98720  25.98720
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.453797e-02 molec./A^3 (1.424846e-02 +/- 0.000000e+00)
+    density:        1.062169e+03 kg/m^3     (1.041017e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 2.0771e+01 -2.2460e+01 -8.9862e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.2460e+01  1.7145e+02  7.3718e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-8.9862e+01  7.3718e+01  8.1505e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.918034e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.005629e+02 +/ 0.000000e+00 [bar]
+Pressure:             9.124047e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.808244e+05 (-3.706860e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.776294e+05 (-2.702437e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.749631e+03 (-6.616242e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.783578e+04 (-8.576504e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.609547e+03 (-8.061068e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 300 out of 5000
+===============================================================================
+
+Box:      25.92829   0.00000   0.00000  Average:  25.91912   0.00000   0.00000
+           0.00000  25.92829   0.00000             0.00000  25.91912   0.00000
+           0.00000   0.00000  25.92829             0.00000   0.00000  25.91912
+Lengths:  25.92829  25.92829  25.92829  Average:  25.91912  25.91912  25.91912
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.434228e-02 molec./A^3 (1.436141e-02 +/- 0.000000e+00)
+    density:        1.047872e+03 kg/m^3     (1.049269e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.6619e+01 -6.0215e+00 -6.5336e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-6.0215e+00  5.1857e+01  4.7950e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-6.5336e+01  4.7950e+01  1.2468e+02 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.957023e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.079846e+02 +/ 0.000000e+00 [bar]
+Pressure:             8.771766e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.747638e+05 (-3.747175e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.754033e+05 (-2.729817e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.658777e+03 (-6.663027e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.456228e+04 (-8.684651e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.139495e+03 (-8.226293e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 400 out of 5000
+===============================================================================
+
+Box:      26.00060   0.00000   0.00000  Average:  25.89462   0.00000   0.00000
+           0.00000  26.00060   0.00000             0.00000  25.89462   0.00000
+           0.00000   0.00000  26.00060             0.00000   0.00000  25.89462
+Lengths:  26.00060  26.00060  26.00060  Average:  25.89462  25.89462  25.89462
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.422296e-02 molec./A^3 (1.440231e-02 +/- 0.000000e+00)
+    density:        1.039154e+03 kg/m^3     (1.052257e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.6185e+02  2.4846e+01 -6.7337e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 2.4846e+01  5.3697e+01  4.4473e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-6.7337e+01  4.4473e+01  9.1842e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.971138e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -3.946514e+02 +/ 0.000000e+00 [bar]
+Pressure:             1.024624e+02 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.672546e+05 (-3.765000e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.720776e+05 (-2.744596e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.603379e+03 (-6.683137e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.066707e+04 (-8.721472e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -7.906488e+03 (-8.142506e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 500 out of 5000
+===============================================================================
+
+Box:      25.91784   0.00000   0.00000  Average:  25.91790   0.00000   0.00000
+           0.00000  25.91784   0.00000             0.00000  25.91790   0.00000
+           0.00000   0.00000  25.91784             0.00000   0.00000  25.91790
+Lengths:  25.91784  25.91784  25.91784  Average:  25.91790  25.91790  25.91790
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.435964e-02 molec./A^3 (1.436339e-02 +/- 0.000000e+00)
+    density:        1.049140e+03 kg/m^3     (1.049414e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.1533e+02  1.9627e+01 -5.7775e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 1.9627e+01  5.4902e+01  4.8131e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-5.7775e+01  4.8131e+01  1.0473e+02 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.957705e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.041167e+02 +/ 0.000000e+00 [bar]
+Pressure:             9.165385e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.696420e+05 (-3.751873e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.735322e+05 (-2.738458e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.666837e+03 (-6.666915e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.069882e+04 (-8.655544e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.744137e+03 (-8.119178e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 600 out of 5000
+===============================================================================
+
+Box:      26.01744   0.00000   0.00000  Average:  25.92951   0.00000   0.00000
+           0.00000  26.01744   0.00000             0.00000  25.92951   0.00000
+           0.00000   0.00000  26.01744             0.00000   0.00000  25.92951
+Lengths:  26.01744  26.01744  26.01744  Average:  25.92951  25.92951  25.92951
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.419535e-02 molec./A^3 (1.434373e-02 +/- 0.000000e+00)
+    density:        1.037137e+03 kg/m^3     (1.047978e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.2868e+02  1.0286e+01 -3.7599e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 1.0286e+01  7.2458e+01  4.0998e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.7599e+01  4.0998e+01  6.0159e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.950920e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.079946e+02 +/ 0.000000e+00 [bar]
+Pressure:             8.709737e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.710310e+05 (-3.749908e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.685976e+05 (-2.735503e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.590561e+03 (-6.658230e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.749182e+04 (-8.661326e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.350977e+03 (-8.169037e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 700 out of 5000
+===============================================================================
+
+Box:      25.88602   0.00000   0.00000  Average:  25.93188   0.00000   0.00000
+           0.00000  25.88602   0.00000             0.00000  25.93188   0.00000
+           0.00000   0.00000  25.88602             0.00000   0.00000  25.93188
+Lengths:  25.88602  25.88602  25.88602  Average:  25.93188  25.93188  25.93188
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.441266e-02 molec./A^3 (1.433973e-02 +/- 0.000000e+00)
+    density:        1.053014e+03 kg/m^3     (1.047685e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.2908e+02 -7.3482e+00  2.5769e-01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-7.3482e+00  6.6915e+01  2.9897e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 2.5769e-01  2.9897e+01  5.3128e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.949539e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.119132e+02 +/ 0.000000e+00 [bar]
+Pressure:             8.304062e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.759177e+05 (-3.752542e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.745327e+05 (-2.734112e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.691452e+03 (-6.655618e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.621063e+04 (-8.698189e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.482881e+03 (-8.205480e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 800 out of 5000
+===============================================================================
+
+Box:      26.12494   0.00000   0.00000  Average:  25.94264   0.00000   0.00000
+           0.00000  26.12494   0.00000             0.00000  25.94264   0.00000
+           0.00000   0.00000  26.12494             0.00000   0.00000  25.94264
+Lengths:  26.12494  26.12494  26.12494  Average:  25.94264  25.94264  25.94264
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.402084e-02 molec./A^3 (1.432177e-02 +/- 0.000000e+00)
+    density:        1.024387e+03 kg/m^3     (1.046373e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.1504e+02 -1.6074e+01  1.9846e+00 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.6074e+01  5.4675e+01  3.5018e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 1.9846e+00  3.5018e+01  5.8012e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.943341e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.184263e+02 +/ 0.000000e+00 [bar]
+Pressure:             7.590771e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.627446e+05 (-3.747598e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.639426e+05 (-2.730876e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.509539e+03 (-6.647237e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.343564e+04 (-8.675697e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.856814e+03 (-8.267966e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 900 out of 5000
+===============================================================================
+
+Box:      25.94788   0.00000   0.00000  Average:  25.95196   0.00000   0.00000
+           0.00000  25.94788   0.00000             0.00000  25.95196   0.00000
+           0.00000   0.00000  25.94788             0.00000   0.00000  25.95196
+Lengths:  25.94788  25.94788  25.94788  Average:  25.95196  25.95196  25.95196
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.430983e-02 molec./A^3 (1.430629e-02 +/- 0.000000e+00)
+    density:        1.045501e+03 kg/m^3     (1.045242e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.3795e+02 -2.6481e+01  2.0901e+00 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.6481e+01  5.1740e+01  2.9681e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 2.0901e+00  2.9681e+01  4.5563e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.937997e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.153807e+02 +/ 0.000000e+00 [bar]
+Pressure:             7.841905e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.711294e+05 (-3.740576e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.696366e+05 (-2.724610e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.643710e+03 (-6.639540e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.686520e+04 (-8.663519e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -7.983936e+03 (-8.321816e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1000 out of 5000
+===============================================================================
+
+Box:      25.89991   0.00000   0.00000  Average:  25.96195   0.00000   0.00000
+           0.00000  25.89991   0.00000             0.00000  25.96195   0.00000
+           0.00000   0.00000  25.89991             0.00000   0.00000  25.96195
+Lengths:  25.89991  25.89991  25.89991  Average:  25.96195  25.96195  25.96195
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.438948e-02 molec./A^3 (1.428969e-02 +/- 0.000000e+00)
+    density:        1.051320e+03 kg/m^3     (1.044029e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.4136e+02 -2.9564e+01  8.1813e+00 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.9564e+01  4.8198e+01  2.5748e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+ 8.1813e+00  2.5748e+01  5.5701e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.932267e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.114742e+02 +/ 0.000000e+00 [bar]
+Pressure:             8.175244e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.746422e+05 (-3.737057e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.723107e+05 (-2.722607e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.680690e+03 (-6.634144e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.743453e+04 (-8.648697e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.216343e+03 (-8.323981e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1100 out of 5000
+===============================================================================
+
+Box:      25.88367   0.00000   0.00000  Average:  25.96271   0.00000   0.00000
+           0.00000  25.88367   0.00000             0.00000  25.96271   0.00000
+           0.00000   0.00000  25.88367             0.00000   0.00000  25.96271
+Lengths:  25.88367  25.88367  25.88367  Average:  25.96271  25.96271  25.96271
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.441659e-02 molec./A^3 (1.428834e-02 +/- 0.000000e+00)
+    density:        1.053300e+03 kg/m^3     (1.043931e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.4307e+02 -3.1391e+01 -1.5157e+00 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.1391e+01  3.6829e+01  2.6309e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.5157e+00  2.6309e+01  7.2457e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.931801e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.090614e+02 +/ 0.000000e+00 [bar]
+Pressure:             8.411866e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.777167e+05 (-3.740297e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.822290e+05 (-2.724976e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.693275e+03 (-6.635332e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.019122e+04 (-8.656538e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.603140e+03 (-8.331474e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1200 out of 5000
+===============================================================================
+
+Box:      25.72459   0.00000   0.00000  Average:  25.94868   0.00000   0.00000
+           0.00000  25.72459   0.00000             0.00000  25.94868   0.00000
+           0.00000   0.00000  25.72459             0.00000   0.00000  25.94868
+Lengths:  25.72459  25.72459  25.72459  Average:  25.94868  25.94868  25.94868
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.468570e-02 molec./A^3 (1.431165e-02 +/- 0.000000e+00)
+    density:        1.072963e+03 kg/m^3     (1.045633e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.3935e+02 -3.6632e+01 -1.7061e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.6632e+01  2.8332e+01  3.1387e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.7061e+01  3.1387e+01  6.4993e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.939845e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.164256e+02 +/ 0.000000e+00 [bar]
+Pressure:             7.755886e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.886018e+05 (-3.750400e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.807084e+05 (-2.730942e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.818219e+03 (-6.645250e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -9.271627e+04 (-8.693003e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.358874e+03 (-8.370494e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1300 out of 5000
+===============================================================================
+
+Box:      25.73989   0.00000   0.00000  Average:  25.93157   0.00000   0.00000
+           0.00000  25.73989   0.00000             0.00000  25.93157   0.00000
+           0.00000   0.00000  25.73989             0.00000   0.00000  25.93157
+Lengths:  25.73989  25.73989  25.73989  Average:  25.93157  25.93157  25.93157
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.465953e-02 molec./A^3 (1.434030e-02 +/- 0.000000e+00)
+    density:        1.071050e+03 kg/m^3     (1.047727e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.1759e+02 -3.4168e+01 -1.9725e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.4168e+01  1.0871e+01  4.2148e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.9725e+01  4.2148e+01  5.8912e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.949735e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.325174e+02 +/ 0.000000e+00 [bar]
+Pressure:             6.245609e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.962304e+05 (-3.763209e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.823226e+05 (-2.738988e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.806068e+03 (-6.657360e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -9.857611e+04 (-8.738035e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.525591e+03 (-8.384436e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1400 out of 5000
+===============================================================================
+
+Box:      25.74047   0.00000   0.00000  Average:  25.92385   0.00000   0.00000
+           0.00000  25.74047   0.00000             0.00000  25.92385   0.00000
+           0.00000   0.00000  25.74047             0.00000   0.00000  25.92385
+Lengths:  25.74047  25.74047  25.74047  Average:  25.92385  25.92385  25.92385
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.465853e-02 molec./A^3 (1.435307e-02 +/- 0.000000e+00)
+    density:        1.070977e+03 kg/m^3     (1.048660e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.0201e+02 -3.7211e+01 -3.3114e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.7211e+01  1.1979e+01  4.2079e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.3114e+01  4.2079e+01  4.5249e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.954144e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.423348e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.307960e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.811106e+05 (-3.766158e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.769915e+05 (-2.741259e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.805603e+03 (-6.662157e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.904061e+04 (-8.746895e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.272977e+03 (-8.358813e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1500 out of 5000
+===============================================================================
+
+Box:      25.94581   0.00000   0.00000  Average:  25.91664   0.00000   0.00000
+           0.00000  25.94581   0.00000             0.00000  25.91664   0.00000
+           0.00000   0.00000  25.94581             0.00000   0.00000  25.91664
+Lengths:  25.94581  25.94581  25.94581  Average:  25.91664  25.91664  25.91664
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.431326e-02 molec./A^3 (1.436498e-02 +/- 0.000000e+00)
+    density:        1.045751e+03 kg/m^3     (1.049530e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.9250e+01 -2.4038e+01 -3.5392e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.4038e+01  1.7162e+01  3.9460e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.5392e+01  3.9460e+01  4.8855e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.958254e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.407365e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.508884e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.763867e+05 (-3.769441e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.697244e+05 (-2.743128e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.645301e+03 (-6.666586e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -9.128625e+04 (-8.757999e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.730727e+03 (-8.384693e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1600 out of 5000
+===============================================================================
+
+Box:      25.84131   0.00000   0.00000  Average:  25.90793   0.00000   0.00000
+           0.00000  25.84131   0.00000             0.00000  25.90793   0.00000
+           0.00000   0.00000  25.84131             0.00000   0.00000  25.90793
+Lengths:  25.84131  25.84131  25.84131  Average:  25.90793  25.90793  25.90793
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.448760e-02 molec./A^3 (1.437947e-02 +/- 0.000000e+00)
+    density:        1.058489e+03 kg/m^3     (1.050589e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 1.0133e+02 -2.3811e+01 -3.1272e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.3811e+01  2.1279e+01  4.0754e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.1272e+01  4.0754e+01  4.4925e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.963256e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.404813e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.584436e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.842998e+05 (-3.774596e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.802013e+05 (-2.745464e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.726246e+03 (-6.673925e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.865292e+04 (-8.783873e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.719355e+03 (-8.400533e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1700 out of 5000
+===============================================================================
+
+Box:      25.46611   0.00000   0.00000  Average:  25.88627   0.00000   0.00000
+           0.00000  25.46611   0.00000             0.00000  25.88627   0.00000
+           0.00000   0.00000  25.46611             0.00000   0.00000  25.88627
+Lengths:  25.46611  25.46611  25.46611  Average:  25.88627  25.88627  25.88627
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.513743e-02 molec./A^3 (1.441643e-02 +/- 0.000000e+00)
+    density:        1.105966e+03 kg/m^3     (1.053289e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.8867e+01 -2.1909e+01 -2.2543e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.1909e+01  2.3755e+01  4.7273e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.2543e+01  4.7273e+01  4.1511e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.976014e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.462239e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.137752e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.974684e+05 (-3.786295e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.863337e+05 (-2.753628e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-7.027945e+03 (-6.691904e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -9.558565e+04 (-8.818112e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.521072e+03 (-8.393678e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1800 out of 5000
+===============================================================================
+
+Box:      25.69771   0.00000   0.00000  Average:  25.87483   0.00000   0.00000
+           0.00000  25.69771   0.00000             0.00000  25.87483   0.00000
+           0.00000   0.00000  25.69771             0.00000   0.00000  25.87483
+Lengths:  25.69771  25.69771  25.69771  Average:  25.87483  25.87483  25.87483
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.473184e-02 molec./A^3 (1.443570e-02 +/- 0.000000e+00)
+    density:        1.076333e+03 kg/m^3     (1.054697e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.6761e+01 -2.4362e+01 -1.9682e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.4362e+01  3.7567e+01  4.7537e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.9682e+01  4.7537e+01  4.2372e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.982664e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.426999e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.556651e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.775082e+05 (-3.789991e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.798335e+05 (-2.757522e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.839639e+03 (-6.700537e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.278710e+04 (-8.814696e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.047964e+03 (-8.399326e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 1900 out of 5000
+===============================================================================
+
+Box:      25.95158   0.00000   0.00000  Average:  25.86728   0.00000   0.00000
+           0.00000  25.95158   0.00000             0.00000  25.86728   0.00000
+           0.00000   0.00000  25.95158             0.00000   0.00000  25.86728
+Lengths:  25.95158  25.95158  25.95158  Average:  25.86728  25.86728  25.86728
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.430370e-02 molec./A^3 (1.444834e-02 +/- 0.000000e+00)
+    density:        1.045053e+03 kg/m^3     (1.055620e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.3636e+01 -2.9347e+01 -2.0503e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.9347e+01  5.0284e+01  4.3838e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.0503e+01  4.3838e+01  4.2299e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.987025e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.366295e+02 +/ 0.000000e+00 [bar]
+Pressure:             6.207301e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.828265e+05 (-3.793339e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.781438e+05 (-2.760205e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.640864e+03 (-6.706877e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.946354e+04 (-8.820005e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.578310e+03 (-8.406509e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2000 out of 5000
+===============================================================================
+
+Box:      25.68224   0.00000   0.00000  Average:  25.86326   0.00000   0.00000
+           0.00000  25.68224   0.00000             0.00000  25.86326   0.00000
+           0.00000   0.00000  25.68224             0.00000   0.00000  25.86326
+Lengths:  25.68224  25.68224  25.68224  Average:  25.86326  25.86326  25.86326
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.475846e-02 molec./A^3 (1.445496e-02 +/- 0.000000e+00)
+    density:        1.078278e+03 kg/m^3     (1.056104e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.7996e+01 -2.8539e+01 -1.9525e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.8539e+01  4.3956e+01  3.7442e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.9525e+01  3.7442e+01  3.5955e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.989311e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.429624e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.596875e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.891069e+05 (-3.794865e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.816742e+05 (-2.762133e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.852000e+03 (-6.709758e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -9.142581e+04 (-8.813322e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -9.154905e+03 (-8.430227e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2100 out of 5000
+===============================================================================
+
+Box:      26.11299   0.00000   0.00000  Average:  25.85637   0.00000   0.00000
+           0.00000  26.11299   0.00000             0.00000  25.85637   0.00000
+           0.00000   0.00000  26.11299             0.00000   0.00000  25.85637
+Lengths:  26.11299  26.11299  26.11299  Average:  25.85637  25.85637  25.85637
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.404011e-02 molec./A^3 (1.446660e-02 +/- 0.000000e+00)
+    density:        1.025794e+03 kg/m^3     (1.056954e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.4026e+01 -2.6156e+01 -1.3158e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.6156e+01  3.7527e+01  3.0581e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.3158e+01  3.0581e+01  4.4381e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.993328e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.406881e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.864467e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.721024e+05 (-3.798929e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.701518e+05 (-2.763102e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.518485e+03 (-6.714677e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.726949e+04 (-8.841866e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.162587e+03 (-8.449327e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2200 out of 5000
+===============================================================================
+
+Box:      25.68554   0.00000   0.00000  Average:  25.85298   0.00000   0.00000
+           0.00000  25.68554   0.00000             0.00000  25.85298   0.00000
+           0.00000   0.00000  25.68554             0.00000   0.00000  25.85298
+Lengths:  25.68554  25.68554  25.68554  Average:  25.85298  25.85298  25.85298
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.475279e-02 molec./A^3 (1.447231e-02 +/- 0.000000e+00)
+    density:        1.077864e+03 kg/m^3     (1.057372e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.3268e+01 -2.9471e+01 -8.8338e+00 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.9471e+01  3.0429e+01  2.9918e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-8.8338e+00  2.9918e+01  4.6477e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   4.995299e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.428054e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.672450e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.959040e+05 (-3.802482e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.864290e+05 (-2.764088e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.849366e+03 (-6.718080e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -9.407702e+04 (-8.866755e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.548592e+03 (-8.453762e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2300 out of 5000
+===============================================================================
+
+Box:      25.42765   0.00000   0.00000  Average:  25.84361   0.00000   0.00000
+           0.00000  25.42765   0.00000             0.00000  25.84361   0.00000
+           0.00000   0.00000  25.42765             0.00000   0.00000  25.84361
+Lengths:  25.42765  25.42765  25.42765  Average:  25.84361  25.84361  25.84361
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.520622e-02 molec./A^3 (1.448819e-02 +/- 0.000000e+00)
+    density:        1.110992e+03 kg/m^3     (1.058532e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.4763e+01 -3.4910e+01 -1.0095e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-3.4910e+01  3.1712e+01  1.9619e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-1.0095e+01  1.9619e+01  5.4157e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   5.000780e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.432005e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.687750e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.948725e+05 (-3.808591e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.883969e+05 (-2.767683e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-7.059881e+03 (-6.726741e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -9.085655e+04 (-8.891758e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -8.559098e+03 (-8.446515e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2400 out of 5000
+===============================================================================
+
+Box:      25.59055   0.00000   0.00000  Average:  25.83233   0.00000   0.00000
+           0.00000  25.59055   0.00000             0.00000  25.83233   0.00000
+           0.00000   0.00000  25.59055             0.00000   0.00000  25.83233
+Lengths:  25.59055  25.59055  25.59055  Average:  25.83233  25.83233  25.83233
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.491768e-02 molec./A^3 (1.450745e-02 +/- 0.000000e+00)
+    density:        1.089911e+03 kg/m^3     (1.059939e+03 +/- 0.000000e+00)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.8742e+01 -2.9874e+01 -5.8780e+00 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-2.9874e+01  3.4070e+01  1.6356e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+-5.8780e+00  1.6356e+01  4.9641e+01 +/- 0.0000e+00 0.0000e+00 0.0000e+00 [bar]
+Ideal-gas pressure:   5.007429e+02 +/ 0.000000e+00 [bar]
+Excess pressure:     -4.432586e+02 +/ 0.000000e+00 [bar]
+Pressure:             5.748427e+01 +/ 0.000000e+00 [bar]
+
+Total potential energy/kʙ  -3.853301e+05 (-3.813645e+05 +/- 0.000000e+00) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.795967e+05 (-2.771671e+05 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ-6.925919e+03 (-6.735588e+03 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ      -8.974717e+04 (-8.899391e+04 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ   -9.060324e+03 (-8.467914e+03 +/- 0.000000e+00) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2500 out of 5000
+===============================================================================
+
+Box:      25.58413   0.00000   0.00000  Average:  25.82637   0.00000   0.00000
+           0.00000  25.58413   0.00000             0.00000  25.82637   0.00000
+           0.00000   0.00000  25.58413             0.00000   0.00000  25.82637
+Lengths:  25.58413  25.58413  25.58413  Average:  25.82637  25.82637  25.82637
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 4.992820e-14)
+    number density: 1.492892e-02 molec./A^3 (1.451750e-02 +/- 6.212930e-04)
+    density:        1.090732e+03 kg/m^3     (1.060673e+03 +/- 4.539273e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.0725e+01 -3.0881e+01 -9.4678e+00 +/- 1.3436e+02 1.8021e+01 1.0246e+02 [bar]
+-3.0881e+01  3.6027e+01  1.1457e+01 +/- 1.8021e+01 5.9654e+01 1.9562e+02 [bar]
+-9.4678e+00  1.1457e+01  4.9791e+01 +/- 1.0246e+02 1.9562e+02 1.1504e+02 [bar]
+Ideal-gas pressure:   5.010897e+02 +/ 2.144471e+01 [bar]
+Excess pressure:     -4.422419e+02 +/ 7.894329e+01 [bar]
+Pressure:             5.884789e+01 +/ 6.818605e+01 [bar]
+
+Total potential energy/kʙ  -3.923610e+05 (-3.815488e+05 +/- 2.103251e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.806651e+05 (-2.774268e+05 +/- 1.333018e+04) [K]
+    Van der Waals (Tail)/kʙ-6.931137e+03 (-6.740831e+03 +/- 2.987298e+02) [K]
+    Coulombic Real/kʙ      -9.566500e+04 (-8.890030e+04 +/- 7.036432e+03) [K]
+    Coulombic Fourier/kʙ   -9.099758e+03 (-8.480919e+03 +/- 4.710234e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2600 out of 5000
+===============================================================================
+
+Box:      26.10545   0.00000   0.00000  Average:  25.83206   0.00000   0.00000
+           0.00000  26.10545   0.00000             0.00000  25.83206   0.00000
+           0.00000   0.00000  26.10545             0.00000   0.00000  25.83206
+Lengths:  26.10545  26.10545  26.10545  Average:  25.83206  25.83206  25.83206
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.405226e-02 molec./A^3 (1.450792e-02 +/- 5.313008e-04)
+    density:        1.026682e+03 kg/m^3     (1.059973e+03 +/- 3.881774e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.2765e+01 -3.2753e+01 -4.2095e+00 +/- 1.3681e+02 2.7234e+01 1.1990e+02 [bar]
+-3.2753e+01  4.1498e+01  1.8582e+01 +/- 2.7234e+01 1.9001e+01 1.2336e+02 [bar]
+-4.2095e+00  1.8582e+01  5.0759e+01 +/- 1.1990e+02 1.2336e+02 1.0696e+02 [bar]
+Ideal-gas pressure:   5.007591e+02 +/ 1.833851e+01 [bar]
+Excess pressure:     -4.424186e+02 +/ 7.882164e+01 [bar]
+Pressure:             5.834051e+01 +/ 6.639638e+01 [bar]
+
+Total potential energy/kʙ  -3.629927e+05 (-3.812372e+05 +/- 1.818799e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.617432e+05 (-2.772212e+05 +/- 1.171690e+04) [K]
+    Van der Waals (Tail)/kʙ-6.524128e+03 (-6.736291e+03 +/- 2.535022e+02) [K]
+    Coulombic Real/kʙ      -8.643260e+04 (-8.878874e+04 +/- 5.861063e+03) [K]
+    Coulombic Fourier/kʙ   -8.292706e+03 (-8.490991e+03 +/- 4.761960e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2700 out of 5000
+===============================================================================
+
+Box:      26.00976   0.00000   0.00000  Average:  25.84209   0.00000   0.00000
+           0.00000  26.00976   0.00000             0.00000  25.84209   0.00000
+           0.00000   0.00000  26.00976             0.00000   0.00000  25.84209
+Lengths:  26.00976  26.00976  26.00976  Average:  25.84209  25.84209  25.84209
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.420793e-02 molec./A^3 (1.449123e-02 +/- 4.582277e-04)
+    density:        1.038056e+03 kg/m^3     (1.058754e+03 +/- 3.347890e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.0329e+01 -4.2974e+01 -4.7790e-02 +/- 1.3947e+02 8.1087e+01 1.2954e+02 [bar]
+-4.2974e+01  4.1813e+01  1.9464e+01 +/- 8.1087e+01 1.6270e+01 1.0475e+02 [bar]
+-4.7790e-02  1.9464e+01  4.7165e+01 +/- 1.2954e+02 1.0475e+02 8.0449e+01 [bar]
+Ideal-gas pressure:   5.001829e+02 +/ 1.581630e+01 [bar]
+Excess pressure:     -4.437474e+02 +/ 7.882981e+01 [bar]
+Pressure:             5.643547e+01 +/ 6.462921e+01 [bar]
+
+Total potential energy/kʙ  -3.720632e+05 (-3.806095e+05 +/- 1.566975e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.709386e+05 (-2.769135e+05 +/- 1.055215e+04) [K]
+    Van der Waals (Tail)/kʙ-6.596401e+03 (-6.728869e+03 +/- 2.170378e+02) [K]
+    Coulombic Real/kʙ      -8.620368e+04 (-8.848537e+04 +/- 4.555332e+03) [K]
+    Coulombic Fourier/kʙ   -8.324452e+03 (-8.481795e+03 +/- 3.962760e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2800 out of 5000
+===============================================================================
+
+Box:      25.61720   0.00000   0.00000  Average:  25.84551   0.00000   0.00000
+           0.00000  25.61720   0.00000             0.00000  25.84551   0.00000
+           0.00000   0.00000  25.61720             0.00000   0.00000  25.84551
+Lengths:  25.61720  25.61720  25.61720  Average:  25.84551  25.84551  25.84551
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.487116e-02 molec./A^3 (1.448541e-02 +/- 4.384803e-04)
+    density:        1.086513e+03 kg/m^3     (1.058329e+03 +/- 3.203612e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 7.3061e+01 -4.7797e+01  2.9586e-01 +/- 1.5254e+02 9.7377e+01 1.2195e+02 [bar]
+-4.7797e+01  3.9532e+01  2.2847e+01 +/- 9.7377e+01 2.4761e+01 7.9144e+01 [bar]
+ 2.9586e-01  2.2847e+01  4.4378e+01 +/- 1.2195e+02 7.9144e+01 6.5653e+01 [bar]
+Ideal-gas pressure:   4.999821e+02 +/ 1.513470e+01 [bar]
+Excess pressure:     -4.476586e+02 +/ 8.211568e+01 [bar]
+Pressure:             5.232342e+01 +/ 6.702794e+01 [bar]
+
+Total potential energy/kʙ  -3.898211e+05 (-3.804087e+05 +/- 1.506703e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.808838e+05 (-2.768854e+05 +/- 1.036077e+04) [K]
+    Van der Waals (Tail)/kʙ-6.904325e+03 (-6.726600e+03 +/- 2.067797e+02) [K]
+    Coulombic Real/kʙ      -9.311771e+04 (-8.832265e+04 +/- 4.200521e+03) [K]
+    Coulombic Fourier/kʙ   -8.915312e+03 (-8.474006e+03 +/- 3.461040e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 2900 out of 5000
+===============================================================================
+
+Box:      25.71630   0.00000   0.00000  Average:  25.84375   0.00000   0.00000
+           0.00000  25.71630   0.00000             0.00000  25.84375   0.00000
+           0.00000   0.00000  25.71630             0.00000   0.00000  25.84375
+Lengths:  25.71630  25.71630  25.71630  Average:  25.84375  25.84375  25.84375
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.469990e-02 molec./A^3 (1.448825e-02 +/- 4.386148e-04)
+    density:        1.074000e+03 kg/m^3     (1.058536e+03 +/- 3.204595e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 7.6143e+01 -4.3376e+01 -1.3668e+00 +/- 1.4358e+02 6.8897e+01 1.0916e+02 [bar]
+-4.3376e+01  3.8119e+01  2.3835e+01 +/- 6.8897e+01 2.9030e+01 6.9323e+01 [bar]
+-1.3668e+00  2.3835e+01  4.2680e+01 +/- 1.0916e+02 6.9323e+01 5.8803e+01 [bar]
+Ideal-gas pressure:   5.000803e+02 +/ 1.513934e+01 [bar]
+Excess pressure:     -4.477665e+02 +/ 8.171944e+01 [bar]
+Pressure:             5.231376e+01 +/ 6.665330e+01 [bar]
+
+Total potential energy/kʙ  -3.856510e+05 (-3.805952e+05 +/- 1.522161e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.798448e+05 (-2.769403e+05 +/- 1.034966e+04) [K]
+    Van der Waals (Tail)/kʙ-6.824810e+03 (-6.728446e+03 +/- 2.073446e+02) [K]
+    Coulombic Real/kʙ      -9.096427e+04 (-8.844850e+04 +/- 4.347974e+03) [K]
+    Coulombic Fourier/kʙ   -8.017153e+03 (-8.477923e+03 +/- 3.451912e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3000 out of 5000
+===============================================================================
+
+Box:      25.91392   0.00000   0.00000  Average:  25.84284   0.00000   0.00000
+           0.00000  25.91392   0.00000             0.00000  25.84284   0.00000
+           0.00000   0.00000  25.91392             0.00000   0.00000  25.84284
+Lengths:  25.91392  25.91392  25.91392  Average:  25.84284  25.84284  25.84284
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.436616e-02 molec./A^3 (1.448965e-02 +/- 4.370328e-04)
+    density:        1.049617e+03 kg/m^3     (1.058638e+03 +/- 3.193036e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 7.8289e+01 -4.0523e+01  4.8619e+00 +/- 1.3897e+02 5.2319e+01 1.2572e+02 [bar]
+-4.0523e+01  3.3949e+01  2.0649e+01 +/- 5.2319e+01 4.4132e+01 7.7728e+01 [bar]
+ 4.8619e+00  2.0649e+01  3.5397e+01 +/- 1.2572e+02 7.7728e+01 4.9601e+01 [bar]
+Ideal-gas pressure:   5.001284e+02 +/ 1.508474e+01 [bar]
+Excess pressure:     -4.509167e+02 +/ 8.562416e+01 [bar]
+Pressure:             4.921168e+01 +/ 7.056575e+01 [bar]
+
+Total potential energy/kʙ  -3.874966e+05 (-3.807991e+05 +/- 1.538383e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.767832e+05 (-2.769798e+05 +/- 1.033485e+04) [K]
+    Van der Waals (Tail)/kʙ-6.669865e+03 (-6.728467e+03 +/- 2.053876e+02) [K]
+    Coulombic Real/kʙ      -9.556916e+04 (-8.860523e+04 +/- 4.538517e+03) [K]
+    Coulombic Fourier/kʙ   -8.474374e+03 (-8.485576e+03 +/- 3.579368e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3100 out of 5000
+===============================================================================
+
+Box:      25.86350   0.00000   0.00000  Average:  25.84126   0.00000   0.00000
+           0.00000  25.86350   0.00000             0.00000  25.84126   0.00000
+           0.00000   0.00000  25.86350             0.00000   0.00000  25.84126
+Lengths:  25.86350  25.86350  25.86350  Average:  25.84126  25.84126  25.84126
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 8.647818e-14)
+    number density: 1.445034e-02 molec./A^3 (1.449219e-02 +/- 4.370993e-04)
+    density:        1.055767e+03 kg/m^3     (1.058825e+03 +/- 3.193522e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.4261e+01 -4.2803e+01  5.4476e+00 +/- 1.4009e+02 5.2735e+01 1.2574e+02 [bar]
+-4.2803e+01  2.6761e+01  2.1802e+01 +/- 5.2735e+01 4.9305e+01 7.7801e+01 [bar]
+ 5.4476e+00  2.1802e+01  2.9801e+01 +/- 1.2574e+02 7.7801e+01 5.2465e+01 [bar]
+Ideal-gas pressure:   5.002163e+02 +/ 1.508703e+01 [bar]
+Excess pressure:     -4.532752e+02 +/ 8.594090e+01 [bar]
+Pressure:             4.694113e+01 +/ 7.092285e+01 [bar]
+
+Total potential energy/kʙ  -3.836351e+05 (-3.810830e+05 +/- 1.541187e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.760659e+05 (-2.770988e+05 +/- 1.034112e+04) [K]
+    Van der Waals (Tail)/kʙ-6.708947e+03 (-6.729282e+03 +/- 2.053954e+02) [K]
+    Coulombic Real/kʙ      -9.230224e+04 (-8.877256e+04 +/- 4.574854e+03) [K]
+    Coulombic Fourier/kʙ   -8.558000e+03 (-8.482355e+03 +/- 3.580740e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3200 out of 5000
+===============================================================================
+
+Box:      25.96813   0.00000   0.00000  Average:  25.84254   0.00000   0.00000
+           0.00000  25.96813   0.00000             0.00000  25.84254   0.00000
+           0.00000   0.00000  25.96813             0.00000   0.00000  25.84254
+Lengths:  25.96813  25.96813  25.96813  Average:  25.84254  25.84254  25.84254
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.427638e-02 molec./A^3 (1.448992e-02 +/- 4.370333e-04)
+    density:        1.043056e+03 kg/m^3     (1.058659e+03 +/- 3.193040e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.2743e+01 -4.5348e+01  6.3092e+00 +/- 1.3958e+02 5.4253e+01 1.2581e+02 [bar]
+-4.5348e+01  2.2018e+01  1.8538e+01 +/- 5.4253e+01 5.7217e+01 7.8005e+01 [bar]
+ 6.3092e+00  1.8538e+01  2.0980e+01 +/- 1.2581e+02 7.8005e+01 6.6264e+01 [bar]
+Ideal-gas pressure:   5.001380e+02 +/ 1.508476e+01 [bar]
+Excess pressure:     -4.582241e+02 +/ 8.851365e+01 [bar]
+Pressure:             4.191385e+01 +/ 7.403768e+01 [bar]
+
+Total potential energy/kʙ  -3.777360e+05 (-3.810733e+05 +/- 1.541011e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.729875e+05 (-2.770999e+05 +/- 1.034124e+04) [K]
+    Van der Waals (Tail)/kʙ-6.628178e+03 (-6.727141e+03 +/- 2.054389e+02) [K]
+    Coulombic Real/kʙ      -8.927655e+04 (-8.875415e+04 +/- 4.568091e+03) [K]
+    Coulombic Fourier/kʙ   -8.843742e+03 (-8.492054e+03 +/- 3.584728e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3300 out of 5000
+===============================================================================
+
+Box:      25.91827   0.00000   0.00000  Average:  25.84686   0.00000   0.00000
+           0.00000  25.91827   0.00000             0.00000  25.84686   0.00000
+           0.00000   0.00000  25.91827             0.00000   0.00000  25.84686
+Lengths:  25.91827  25.91827  25.91827  Average:  25.84686  25.84686  25.84686
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.435893e-02 molec./A^3 (1.448265e-02 +/- 4.375574e-04)
+    density:        1.049088e+03 kg/m^3     (1.058127e+03 +/- 3.196869e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.3642e+01 -4.3891e+01  9.4837e+00 +/- 1.3987e+02 5.3252e+01 1.2654e+02 [bar]
+-4.3891e+01  2.9559e+01  2.0697e+01 +/- 5.3252e+01 4.6142e+01 7.7728e+01 [bar]
+ 9.4837e+00  2.0697e+01  1.8601e+01 +/- 1.2654e+02 7.7728e+01 7.1269e+01 [bar]
+Ideal-gas pressure:   4.998868e+02 +/ 1.510284e+01 [bar]
+Excess pressure:     -4.559527e+02 +/ 8.701932e+01 [bar]
+Pressure:             4.393410e+01 +/ 7.241469e+01 [bar]
+
+Total potential energy/kʙ  -3.731804e+05 (-3.808900e+05 +/- 1.538754e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.757699e+05 (-2.769265e+05 +/- 1.033616e+04) [K]
+    Van der Waals (Tail)/kʙ-6.666505e+03 (-6.723710e+03 +/- 2.059389e+02) [K]
+    Coulombic Real/kʙ      -8.239030e+04 (-8.875109e+04 +/- 4.567033e+03) [K]
+    Coulombic Fourier/kʙ   -8.353652e+03 (-8.488780e+03 +/- 3.580664e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3400 out of 5000
+===============================================================================
+
+Box:      25.99849   0.00000   0.00000  Average:  25.84807   0.00000   0.00000
+           0.00000  25.99849   0.00000             0.00000  25.84807   0.00000
+           0.00000   0.00000  25.99849             0.00000   0.00000  25.84807
+Lengths:  25.99849  25.99849  25.99849  Average:  25.84807  25.84807  25.84807
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 8.647818e-14)
+    number density: 1.422643e-02 molec./A^3 (1.448051e-02 +/- 4.379234e-04)
+    density:        1.039407e+03 kg/m^3     (1.057971e+03 +/- 3.199544e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.5336e+01 -4.0872e+01  1.3028e+01 +/- 1.4055e+02 5.2323e+01 1.2821e+02 [bar]
+-4.0872e+01  3.3841e+01  2.2880e+01 +/- 5.2323e+01 4.4134e+01 7.8012e+01 [bar]
+ 1.3028e+01  2.2880e+01  1.5751e+01 +/- 1.2821e+02 7.8012e+01 7.7731e+01 [bar]
+Ideal-gas pressure:   4.998131e+02 +/ 1.511548e+01 [bar]
+Excess pressure:     -4.548370e+02 +/ 8.647839e+01 [bar]
+Pressure:             4.497606e+01 +/ 7.176933e+01 [bar]
+
+Total potential energy/kʙ  -3.810744e+05 (-3.808774e+05 +/- 1.538673e+04) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.763558e+05 (-2.768854e+05 +/- 1.033890e+04) [K]
+    Van der Waals (Tail)/kʙ-6.604989e+03 (-6.722932e+03 +/- 2.061254e+02) [K]
+    Coulombic Real/kʙ      -8.987584e+04 (-8.878114e+04 +/- 4.578235e+03) [K]
+    Coulombic Fourier/kʙ   -8.237724e+03 (-8.487917e+03 +/- 3.580054e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3500 out of 5000
+===============================================================================
+
+Box:      25.84883   0.00000   0.00000  Average:  25.84562   0.00000   0.00000
+           0.00000  25.84883   0.00000             0.00000  25.84562   0.00000
+           0.00000   0.00000  25.84883             0.00000   0.00000  25.84562
+Lengths:  25.84883  25.84883  25.84883  Average:  25.84562  25.84562  25.84562
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 2.610717e-14)
+    number density: 1.447496e-02 molec./A^3 (1.448459e-02 +/- 2.303791e-04)
+    density:        1.057565e+03 kg/m^3     (1.058269e+03 +/- 1.683189e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.8782e+01 -3.9729e+01  2.0182e+01 +/- 9.3787e+01 2.7837e+01 1.1005e+02 [bar]
+-3.9729e+01  3.1079e+01  2.2693e+01 +/- 2.7837e+01 2.8455e+01 4.2224e+01 [bar]
+ 2.0182e+01  2.2693e+01  2.2519e+01 +/- 1.1005e+02 4.2224e+01 7.8297e+01 [bar]
+Ideal-gas pressure:   4.999538e+02 +/ 7.951825e+00 [bar]
+Excess pressure:     -4.524937e+02 +/ 4.574894e+01 [bar]
+Pressure:             4.746011e+01 +/ 3.833872e+01 [bar]
+
+Total potential energy/kʙ  -3.738865e+05 (-3.810384e+05 +/- 8.177940e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.672765e+05 (-2.768853e+05 +/- 5.430575e+03) [K]
+    Van der Waals (Tail)/kʙ-6.720375e+03 (-6.725516e+03 +/- 1.088482e+02) [K]
+    Coulombic Real/kʙ      -9.107189e+04 (-8.892062e+04 +/- 3.044374e+03) [K]
+    Coulombic Fourier/kʙ   -8.817689e+03 (-8.507012e+03 +/- 2.226174e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3600 out of 5000
+===============================================================================
+
+Box:      26.08417   0.00000   0.00000  Average:  25.84870   0.00000   0.00000
+           0.00000  26.08417   0.00000             0.00000  25.84870   0.00000
+           0.00000   0.00000  26.08417             0.00000   0.00000  25.84870
+Lengths:  26.08417  26.08417  26.08417  Average:  25.84870  25.84870  25.84870
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.408669e-02 molec./A^3 (1.447937e-02 +/- 2.339474e-04)
+    density:        1.029198e+03 kg/m^3     (1.057887e+03 +/- 1.709259e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.1818e+01 -4.0593e+01  2.5460e+01 +/- 9.7488e+01 2.7357e+01 1.2003e+02 [bar]
+-4.0593e+01  2.4530e+01  1.9136e+01 +/- 2.7357e+01 5.1374e+01 4.1341e+01 [bar]
+ 2.5460e+01  1.9136e+01  2.4386e+01 +/- 1.2003e+02 4.1341e+01 5.9508e+01 [bar]
+Ideal-gas pressure:   4.997735e+02 +/ 8.074987e+00 [bar]
+Excess pressure:     -4.528625e+02 +/ 4.582371e+01 [bar]
+Pressure:             4.691102e+01 +/ 3.864555e+01 [bar]
+
+Total potential energy/kʙ  -3.616896e+05 (-3.807186e+05 +/- 8.048851e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.586078e+05 (-2.766998e+05 +/- 5.568697e+03) [K]
+    Van der Waals (Tail)/kʙ-6.540113e+03 (-6.722285e+03 +/- 1.116547e+02) [K]
+    Coulombic Real/kʙ      -8.753183e+04 (-8.879093e+04 +/- 2.575215e+03) [K]
+    Coulombic Fourier/kʙ   -9.009892e+03 (-8.505609e+03 +/- 2.102415e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3700 out of 5000
+===============================================================================
+
+Box:      25.81960   0.00000   0.00000  Average:  25.85247   0.00000   0.00000
+           0.00000  25.81960   0.00000             0.00000  25.85247   0.00000
+           0.00000   0.00000  25.81960             0.00000   0.00000  25.85247
+Lengths:  25.81960  25.81960  25.81960  Average:  25.85247  25.85247  25.85247
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 5.221433e-14)
+    number density: 1.452418e-02 molec./A^3 (1.447308e-02 +/- 2.391280e-04)
+    density:        1.061161e+03 kg/m^3     (1.057428e+03 +/- 1.747110e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.2024e+01 -3.9677e+01  2.5251e+01 +/- 9.2764e+01 2.7653e+01 1.0894e+02 [bar]
+-3.9677e+01  2.4375e+01  2.1241e+01 +/- 2.7653e+01 4.6841e+01 4.0710e+01 [bar]
+ 2.5251e+01  2.1241e+01  2.2818e+01 +/- 1.0894e+02 4.0710e+01 5.9407e+01 [bar]
+Ideal-gas pressure:   4.995566e+02 +/ 8.253803e+00 [bar]
+Excess pressure:     -4.531508e+02 +/ 4.582174e+01 [bar]
+Pressure:             4.640578e+01 +/ 3.885709e+01 [bar]
+
+Total potential energy/kʙ  -3.789102e+05 (-3.805010e+05 +/- 8.126760e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.752087e+05 (-2.765734e+05 +/- 5.667309e+03) [K]
+    Van der Waals (Tail)/kʙ-6.743227e+03 (-6.719689e+03 +/- 1.138014e+02) [K]
+    Coulombic Real/kʙ      -8.889901e+04 (-8.870593e+04 +/- 2.429146e+03) [K]
+    Coulombic Fourier/kʙ   -8.059314e+03 (-8.501948e+03 +/- 1.993110e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3800 out of 5000
+===============================================================================
+
+Box:      25.65969   0.00000   0.00000  Average:  25.85226   0.00000   0.00000
+           0.00000  25.65969   0.00000             0.00000  25.85226   0.00000
+           0.00000   0.00000  25.65969             0.00000   0.00000  25.85226
+Lengths:  25.65969  25.65969  25.65969  Average:  25.85226  25.85226  25.85226
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 5.221433e-14)
+    number density: 1.479742e-02 molec./A^3 (1.447334e-02 +/- 2.367770e-04)
+    density:        1.081125e+03 kg/m^3     (1.057447e+03 +/- 1.729933e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.1629e+01 -4.1334e+01  2.4478e+01 +/- 8.8229e+01 2.7487e+01 9.9515e+01 [bar]
+-4.1334e+01  2.3590e+01  2.3734e+01 +/- 2.7487e+01 4.5667e+01 4.2246e+01 [bar]
+ 2.4478e+01  2.3734e+01  2.8081e+01 +/- 9.9515e+01 4.2246e+01 3.8035e+01 [bar]
+Ideal-gas pressure:   4.995654e+02 +/ 8.172656e+00 [bar]
+Excess pressure:     -4.517985e+02 +/ 4.491589e+01 [bar]
+Pressure:             4.776696e+01 +/ 3.734027e+01 [bar]
+
+Total potential energy/kʙ  -3.855290e+05 (-3.804630e+05 +/- 8.129876e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.792498e+05 (-2.765580e+05 +/- 5.632134e+03) [K]
+    Van der Waals (Tail)/kʙ-6.870085e+03 (-6.720057e+03 +/- 1.121538e+02) [K]
+    Coulombic Real/kʙ      -9.117520e+04 (-8.868818e+04 +/- 2.406147e+03) [K]
+    Coulombic Fourier/kʙ   -8.233951e+03 (-8.496770e+03 +/- 1.917963e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 3900 out of 5000
+===============================================================================
+
+Box:      26.25633   0.00000   0.00000  Average:  25.85781   0.00000   0.00000
+           0.00000  26.25633   0.00000             0.00000  25.85781   0.00000
+           0.00000   0.00000  26.25633             0.00000   0.00000  25.85781
+Lengths:  26.25633  26.25633  26.25633  Average:  25.85781  25.85781  25.85781
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.381141e-02 molec./A^3 (1.446419e-02 +/- 2.448397e-04)
+    density:        1.009085e+03 kg/m^3     (1.056779e+03 +/- 1.788841e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.3749e+01 -3.8015e+01  2.5365e+01 +/- 8.9836e+01 2.8802e+01 9.6767e+01 [bar]
+-3.8015e+01  2.5445e+01  2.0329e+01 +/- 2.8802e+01 3.7414e+01 4.0663e+01 [bar]
+ 2.5365e+01  2.0329e+01  3.2030e+01 +/- 9.6767e+01 4.0663e+01 2.8449e+01 [bar]
+Ideal-gas pressure:   4.992499e+02 +/ 8.450951e+00 [bar]
+Excess pressure:     -4.488418e+02 +/ 4.530521e+01 [bar]
+Pressure:             5.040807e+01 +/ 3.710330e+01 [bar]
+
+Total potential energy/kʙ  -3.528126e+05 (-3.801883e+05 +/- 8.292071e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.577213e+05 (-2.763657e+05 +/- 5.798739e+03) [K]
+    Van der Waals (Tail)/kʙ-6.412305e+03 (-6.716278e+03 +/- 1.154493e+02) [K]
+    Coulombic Real/kʙ      -8.034370e+04 (-8.861197e+04 +/- 2.375089e+03) [K]
+    Coulombic Fourier/kʙ   -8.335313e+03 (-8.494309e+03 +/- 1.895119e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4000 out of 5000
+===============================================================================
+
+Box:      26.22301   0.00000   0.00000  Average:  25.87210   0.00000   0.00000
+           0.00000  26.22301   0.00000             0.00000  25.87210   0.00000
+           0.00000   0.00000  26.22301             0.00000   0.00000  25.87210
+Lengths:  26.22301  26.22301  26.22301  Average:  25.87210  25.87210  25.87210
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 5.221433e-14)
+    number density: 1.386413e-02 molec./A^3 (1.444118e-02 +/- 2.755147e-04)
+    density:        1.012937e+03 kg/m^3     (1.055097e+03 +/- 2.012958e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.3243e+01 -3.6728e+01  2.6867e+01 +/- 8.6598e+01 2.9995e+01 9.6100e+01 [bar]
+-3.6728e+01  2.6933e+01  1.6966e+01 +/- 2.9995e+01 3.2241e+01 4.2327e+01 [bar]
+ 2.6867e+01  1.6966e+01  2.8923e+01 +/- 9.6100e+01 4.2327e+01 3.3130e+01 [bar]
+Ideal-gas pressure:   4.984554e+02 +/ 9.509737e+00 [bar]
+Excess pressure:     -4.487552e+02 +/ 4.526164e+01 [bar]
+Pressure:             4.970015e+01 +/ 3.692208e+01 [bar]
+
+Total potential energy/kʙ  -3.575161e+05 (-3.795139e+05 +/- 8.915679e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.653832e+05 (-2.758923e+05 +/- 6.373657e+03) [K]
+    Van der Waals (Tail)/kʙ-6.436782e+03 (-6.705500e+03 +/- 1.290611e+02) [K]
+    Coulombic Real/kʙ      -7.766209e+04 (-8.842337e+04 +/- 2.410127e+03) [K]
+    Coulombic Fourier/kʙ   -8.034040e+03 (-8.492713e+03 +/- 1.890052e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4100 out of 5000
+===============================================================================
+
+Box:      26.21414   0.00000   0.00000  Average:  25.87965   0.00000   0.00000
+           0.00000  26.21414   0.00000             0.00000  25.87965   0.00000
+           0.00000   0.00000  26.21414             0.00000   0.00000  25.87965
+Lengths:  26.21414  26.21414  26.21414  Average:  25.87965  25.87965  25.87965
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.387821e-02 molec./A^3 (1.442876e-02 +/- 2.764793e-04)
+    density:        1.013966e+03 kg/m^3     (1.054190e+03 +/- 2.020005e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.1286e+01 -3.2630e+01  2.8457e+01 +/- 8.6672e+01 3.0941e+01 9.6148e+01 [bar]
+-3.2630e+01  2.4779e+01  1.5877e+01 +/- 3.0941e+01 3.2479e+01 4.2376e+01 [bar]
+ 2.8457e+01  1.5877e+01  2.9569e+01 +/- 9.6148e+01 4.2376e+01 3.3150e+01 [bar]
+Ideal-gas pressure:   4.980268e+02 +/ 9.543031e+00 [bar]
+Excess pressure:     -4.494822e+02 +/ 4.528078e+01 [bar]
+Pressure:             4.854462e+01 +/ 3.698250e+01 [bar]
+
+Total potential energy/kʙ  -3.674467e+05 (-3.792497e+05 +/- 8.934371e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.626858e+05 (-2.756538e+05 +/- 6.392003e+03) [K]
+    Van der Waals (Tail)/kʙ-6.443318e+03 (-6.699615e+03 +/- 1.296162e+02) [K]
+    Coulombic Real/kʙ      -8.916994e+04 (-8.840187e+04 +/- 2.411261e+03) [K]
+    Coulombic Fourier/kʙ   -9.147659e+03 (-8.494352e+03 +/- 1.889957e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4200 out of 5000
+===============================================================================
+
+Box:      25.73318   0.00000   0.00000  Average:  25.88456   0.00000   0.00000
+           0.00000  25.73318   0.00000             0.00000  25.88456   0.00000
+           0.00000   0.00000  25.73318             0.00000   0.00000  25.88456
+Lengths:  25.73318  25.73318  25.73318  Average:  25.88456  25.88456  25.88456
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.467100e-02 molec./A^3 (1.442061e-02 +/- 2.781287e-04)
+    density:        1.071888e+03 kg/m^3     (1.053595e+03 +/- 2.032056e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.6983e+01 -3.3060e+01  2.5078e+01 +/- 8.7355e+01 3.0757e+01 9.6152e+01 [bar]
+-3.3060e+01  2.5059e+01  1.5215e+01 +/- 3.0757e+01 3.2420e+01 4.2451e+01 [bar]
+ 2.5078e+01  1.5215e+01  2.7013e+01 +/- 9.6152e+01 4.2451e+01 3.3319e+01 [bar]
+Ideal-gas pressure:   4.977456e+02 +/ 9.599963e+00 [bar]
+Excess pressure:     -4.513939e+02 +/ 4.551847e+01 [bar]
+Pressure:             4.635172e+01 +/ 3.742941e+01 [bar]
+
+Total potential energy/kʙ  -3.794659e+05 (-3.790316e+05 +/- 8.969574e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.772746e+05 (-2.755125e+05 +/- 6.416970e+03) [K]
+    Van der Waals (Tail)/kʙ-6.811393e+03 (-6.696049e+03 +/- 1.303884e+02) [K]
+    Coulombic Real/kʙ      -8.754025e+04 (-8.833837e+04 +/- 2.418375e+03) [K]
+    Coulombic Fourier/kʙ   -7.839680e+03 (-8.484645e+03 +/- 1.897501e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4300 out of 5000
+===============================================================================
+
+Box:      25.58683   0.00000   0.00000  Average:  25.88039   0.00000   0.00000
+           0.00000  25.58683   0.00000             0.00000  25.88039   0.00000
+           0.00000   0.00000  25.58683             0.00000   0.00000  25.88039
+Lengths:  25.58683  25.58683  25.58683  Average:  25.88039  25.88039  25.88039
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.492419e-02 molec./A^3 (1.442756e-02 +/- 2.766712e-04)
+    density:        1.090387e+03 kg/m^3     (1.054103e+03 +/- 2.021407e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.6220e+01 -3.0687e+01  2.6075e+01 +/- 8.7551e+01 3.2005e+01 9.6109e+01 [bar]
+-3.0687e+01  2.5635e+01  1.0219e+01 +/- 3.2005e+01 3.2327e+01 4.4112e+01 [bar]
+ 2.6075e+01  1.0219e+01  2.0284e+01 +/- 9.6109e+01 4.4112e+01 3.6751e+01 [bar]
+Ideal-gas pressure:   4.979855e+02 +/ 9.549656e+00 [bar]
+Excess pressure:     -4.539393e+02 +/ 4.624887e+01 [bar]
+Pressure:             4.404627e+01 +/ 3.835264e+01 [bar]
+
+Total potential energy/kʙ  -3.840412e+05 (-3.791317e+05 +/- 8.951210e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.821678e+05 (-2.757041e+05 +/- 6.385637e+03) [K]
+    Van der Waals (Tail)/kʙ-6.928942e+03 (-6.699084e+03 +/- 1.297105e+02) [K]
+    Coulombic Real/kʙ      -8.583245e+04 (-8.824806e+04 +/- 2.438089e+03) [K]
+    Coulombic Fourier/kʙ   -9.112102e+03 (-8.480413e+03 +/- 1.906011e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4400 out of 5000
+===============================================================================
+
+Box:      25.88724   0.00000   0.00000  Average:  25.87830   0.00000   0.00000
+           0.00000  25.88724   0.00000             0.00000  25.87830   0.00000
+           0.00000   0.00000  25.88724             0.00000   0.00000  25.87830
+Lengths:  25.88724  25.88724  25.88724  Average:  25.87830  25.87830  25.87830
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.441062e-02 molec./A^3 (1.443101e-02 +/- 2.761644e-04)
+    density:        1.052865e+03 kg/m^3     (1.054355e+03 +/- 2.017704e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.1840e+01 -3.0658e+01  2.4784e+01 +/- 8.6636e+01 3.2024e+01 9.6171e+01 [bar]
+-3.0658e+01  2.5722e+01  1.2076e+01 +/- 3.2024e+01 3.2315e+01 4.3275e+01 [bar]
+ 2.4784e+01  1.2076e+01  1.6595e+01 +/- 9.6171e+01 4.3275e+01 4.0152e+01 [bar]
+Ideal-gas pressure:   4.981046e+02 +/ 9.532161e+00 [bar]
+Excess pressure:     -4.533856e+02 +/ 4.605060e+01 [bar]
+Pressure:             4.471901e+01 +/ 3.803685e+01 [bar]
+
+Total potential energy/kʙ  -3.743752e+05 (-3.792107e+05 +/- 8.939358e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.665685e+05 (-2.757501e+05 +/- 6.380983e+03) [K]
+    Van der Waals (Tail)/kʙ-6.690506e+03 (-6.700733e+03 +/- 1.294414e+02) [K]
+    Coulombic Real/kʙ      -9.294556e+04 (-8.826901e+04 +/- 2.432523e+03) [K]
+    Coulombic Fourier/kʙ   -8.170562e+03 (-8.490836e+03 +/- 1.890751e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4500 out of 5000
+===============================================================================
+
+Box:      25.93200   0.00000   0.00000  Average:  25.87686   0.00000   0.00000
+           0.00000  25.93200   0.00000             0.00000  25.87686   0.00000
+           0.00000   0.00000  25.93200             0.00000   0.00000  25.87686
+Lengths:  25.93200  25.93200  25.93200  Average:  25.87686  25.87686  25.87686
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 1.764228e-14)
+    number density: 1.433614e-02 molec./A^3 (1.443334e-02 +/- 1.905900e-04)
+    density:        1.047423e+03 kg/m^3     (1.054525e+03 +/- 1.392483e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 9.0543e+01 -3.2275e+01  2.2422e+01 +/- 6.0109e+01 3.0606e+01 6.8681e+01 [bar]
+-3.2275e+01  2.7081e+01  1.0446e+01 +/- 3.0606e+01 2.1805e+01 4.3958e+01 [bar]
+ 2.2422e+01  1.0446e+01  1.9129e+01 +/- 6.8681e+01 4.3958e+01 5.4910e+01 [bar]
+Ideal-gas pressure:   4.981850e+02 +/ 6.578455e+00 [bar]
+Excess pressure:     -4.526006e+02 +/ 3.632412e+01 [bar]
+Pressure:             4.558440e+01 +/ 3.261223e+01 [bar]
+
+Total potential energy/kʙ  -3.757147e+05 (-3.792486e+05 +/- 6.235657e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.722244e+05 (-2.757891e+05 +/- 4.355790e+03) [K]
+    Van der Waals (Tail)/kʙ-6.655925e+03 (-6.701732e+03 +/- 9.001918e+01) [K]
+    Coulombic Real/kʙ      -8.918159e+04 (-8.827383e+04 +/- 1.854009e+03) [K]
+    Coulombic Fourier/kʙ   -7.652833e+03 (-8.483951e+03 +/- 1.370754e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4600 out of 5000
+===============================================================================
+
+Box:      25.88704   0.00000   0.00000  Average:  25.87804   0.00000   0.00000
+           0.00000  25.88704   0.00000             0.00000  25.87804   0.00000
+           0.00000   0.00000  25.88704             0.00000   0.00000  25.87804
+Lengths:  25.88704  25.88704  25.88704  Average:  25.87804  25.87804  25.87804
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.441096e-02 molec./A^3 (1.443128e-02 +/- 1.911502e-04)
+    density:        1.052890e+03 kg/m^3     (1.054374e+03 +/- 1.396576e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.3601e+01 -3.2672e+01  2.1392e+01 +/- 7.1767e+01 2.6876e+01 6.9000e+01 [bar]
+-3.2672e+01  2.5022e+01  1.4121e+01 +/- 2.6876e+01 2.3261e+01 3.1147e+01 [bar]
+ 2.1392e+01  1.4121e+01  2.4710e+01 +/- 6.9000e+01 3.1147e+01 2.8891e+01 [bar]
+Ideal-gas pressure:   4.981139e+02 +/ 6.597788e+00 [bar]
+Excess pressure:     -4.536698e+02 +/ 3.719002e+01 [bar]
+Pressure:             4.444418e+01 +/ 3.369834e+01 [bar]
+
+Total potential energy/kʙ  -3.789800e+05 (-3.792149e+05 +/- 6.209919e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.727391e+05 (-2.757391e+05 +/- 4.374101e+03) [K]
+    Van der Waals (Tail)/kʙ-6.690664e+03 (-6.700582e+03 +/- 9.039745e+01) [K]
+    Coulombic Real/kʙ      -9.098329e+04 (-8.828937e+04 +/- 1.766437e+03) [K]
+    Coulombic Fourier/kʙ   -8.566905e+03 (-8.485823e+03 +/- 1.322149e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4700 out of 5000
+===============================================================================
+
+Box:      25.87093   0.00000   0.00000  Average:  25.87919   0.00000   0.00000
+           0.00000  25.87093   0.00000             0.00000  25.87919   0.00000
+           0.00000   0.00000  25.87093             0.00000   0.00000  25.87919
+Lengths:  25.87093  25.87093  25.87093  Average:  25.87919  25.87919  25.87919
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 3.944933e-14)
+    number density: 1.443789e-02 molec./A^3 (1.442930e-02 +/- 1.915701e-04)
+    density:        1.054857e+03 kg/m^3     (1.054229e+03 +/- 1.399644e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.0339e+01 -2.9918e+01  2.1963e+01 +/- 7.5933e+01 3.2725e+01 6.7428e+01 [bar]
+-2.9918e+01  2.5051e+01  1.4698e+01 +/- 3.2725e+01 2.2879e+01 2.9858e+01 [bar]
+ 2.1963e+01  1.4698e+01  3.0325e+01 +/- 6.7428e+01 2.9858e+01 2.2981e+01 [bar]
+Ideal-gas pressure:   4.980455e+02 +/ 6.612283e+00 [bar]
+Excess pressure:     -4.528072e+02 +/ 3.414127e+01 [bar]
+Pressure:             4.523830e+01 +/ 3.003847e+01 [bar]
+
+Total potential energy/kʙ  -3.800903e+05 (-3.792480e+05 +/- 6.141052e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.728895e+05 (-2.756713e+05 +/- 4.403604e+03) [K]
+    Van der Waals (Tail)/kʙ-6.703168e+03 (-6.699896e+03 +/- 9.026735e+01) [K]
+    Coulombic Real/kʙ      -9.159674e+04 (-8.838757e+04 +/- 1.644876e+03) [K]
+    Coulombic Fourier/kʙ   -8.900961e+03 (-8.489210e+03 +/- 1.288753e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4800 out of 5000
+===============================================================================
+
+Box:      25.69023   0.00000   0.00000  Average:  25.87719   0.00000   0.00000
+           0.00000  25.69023   0.00000             0.00000  25.87719   0.00000
+           0.00000   0.00000  25.69023             0.00000   0.00000  25.87719
+Lengths:  25.69023  25.69023  25.69023  Average:  25.87719  25.87719  25.87719
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.474471e-02 molec./A^3 (1.443261e-02 +/- 1.884427e-04)
+    density:        1.077274e+03 kg/m^3     (1.054471e+03 +/- 1.376795e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 7.9193e+01 -2.8996e+01  2.2713e+01 +/- 7.4979e+01 3.2917e+01 6.6358e+01 [bar]
+-2.8996e+01  2.1065e+01  1.4974e+01 +/- 3.2917e+01 2.9252e+01 2.9377e+01 [bar]
+ 2.2713e+01  1.4974e+01  2.9156e+01 +/- 6.6358e+01 2.9377e+01 2.2399e+01 [bar]
+Ideal-gas pressure:   4.981596e+02 +/ 6.504337e+00 [bar]
+Excess pressure:     -4.550214e+02 +/ 3.703887e+01 [bar]
+Pressure:             4.313820e+01 +/ 3.319433e+01 [bar]
+
+Total potential energy/kʙ  -3.865747e+05 (-3.793885e+05 +/- 6.053950e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.785312e+05 (-2.757577e+05 +/- 4.339670e+03) [K]
+    Van der Waals (Tail)/kʙ-6.845614e+03 (-6.701192e+03 +/- 8.875270e+01) [K]
+    Coulombic Real/kʙ      -9.275985e+04 (-8.843850e+04 +/- 1.628799e+03) [K]
+    Coulombic Fourier/kʙ   -8.437951e+03 (-8.491089e+03 +/- 1.280433e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+Current cycle: 4900 out of 5000
+===============================================================================
+
+Box:      25.86094   0.00000   0.00000  Average:  25.87636   0.00000   0.00000
+           0.00000  25.86094   0.00000             0.00000  25.87636   0.00000
+           0.00000   0.00000  25.86094             0.00000   0.00000  25.87636
+Lengths:  25.86094  25.86094  25.86094  Average:  25.87636  25.87636  25.87636
+Angles:   90.00000  90.00000  90.00000  Average:  90.00000  90.00000  90.00000
+Rectangular boundary conditions
+
+net charge:   0.00000000
+
+component 0 (CO2) lambda:  0 occupancy:  1 (1.000000)
+    net charge:   0.00000000 [e]
+
+Amount of molecules per component :
+-------------------------------------------------------------------------------
+Component 0 (CO2)
+    molecules:      2.500000e+02 molecules  (2.500000e+02 +/- 0.000000e+00)
+    number density: 1.445464e-02 molec./A^3 (1.443392e-02 +/- 1.875219e-04)
+    density:        1.056081e+03 kg/m^3     (1.054567e+03 +/- 1.370067e+01)
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.0141e+01 -2.5196e+01  2.0889e+01 +/- 7.0639e+01 4.0413e+01 6.7351e+01 [bar]
+-2.5196e+01  2.0664e+01  1.4204e+01 +/- 4.0413e+01 2.8829e+01 2.9808e+01 [bar]
+ 2.0889e+01  1.4204e+01  2.5053e+01 +/- 6.7351e+01 2.9808e+01 2.5287e+01 [bar]
+Ideal-gas pressure:   4.982049e+02 +/ 6.472554e+00 [bar]
+Excess pressure:     -4.562520e+02 +/ 3.804636e+01 [bar]
+Pressure:             4.195293e+01 +/ 3.420648e+01 [bar]
+
+Total potential energy/kʙ  -3.765440e+05 (-3.794049e+05 +/- 6.044508e+03) [K]
+-------------------------------------------------------------------------------
+ExternalField-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Framework-molecule
+    Van der Waals/kʙ        0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Van der Waals (Tail)/kʙ 0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Real/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+    Coulombic Fourier/kʙ    0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+Molecule-molecule
+    Van der Waals/kʙ       -2.737420e+05 (-2.757667e+05 +/- 4.330936e+03) [K]
+    Van der Waals (Tail)/kʙ-6.710941e+03 (-6.701603e+03 +/- 8.828004e+01) [K]
+    Coulombic Real/kʙ      -8.702148e+04 (-8.843731e+04 +/- 1.628798e+03) [K]
+    Coulombic Fourier/kʙ   -9.069572e+03 (-8.499287e+03 +/- 1.287471e+02) [K]
+    Molecule Intra/kʙ       0.000000e+00 ( 0.000000e+00 +/- 0.000000e+00) [K]
+
+
+Energy statistics             |  Energy [K]   | Recomputed [K]|  Drift [K]    |
+===============================================================================
+Total potential energy/kʙ     | -3.902445e+05 | -3.902445e+05 |  2.127580e-09 |
+    external field VDW/kʙ     |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    external field Real/kʙ    |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    framework-molecule VDW/kʙ |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    framework-molecule Real/kʙ|  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    molecule-molecule VDW/kʙ  | -2.810610e+05 | -2.810610e+05 |  1.295144e-09 |
+    molecule-molecule Real/kʙ | -9.375693e+04 | -9.375693e+04 |  2.800311e-10 |
+    Van der Waals (Tail)/kʙ   | -6.823881e+03 | -6.823881e+03 |  0.000000e+00 |
+    Ewald Fourier/kʙ          |  6.098735e+03 |  6.098735e+03 | -7.657100e-12 |
+    Ewald self/kʙ             | -4.591696e+06 | -4.591696e+06 |  0.000000e+00 |
+    Ewald exclusion/kʙ        |  4.576994e+06 |  4.576994e+06 |  5.600621e-10 |
+    intra VDW/kʙ              |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    intra Coulombic/kʙ        |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    polarization/kʙ           |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    dU/dlambda VDW/kʙ         |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    dU/dlambda Real/kʙ        |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+    dU/dlambda Ewald/kʙ       |  0.000000e+00 |  0.000000e+00 |  0.000000e+00 |
+-------------------------------------------------------------------------------
+
+
+Monte-Carlo moves statistics
+===============================================================================
+
+    Volume change        all:                8252
+    Volume change        total:              8252
+    Volume change        constructed:        8252
+    Volume change        accepted:           3348
+    Volume change        fraction:       0.405720
+    Volume change        max-change:     0.033333
+
+Component 0 [CO2]
+    Reinsertion (CBMC)   all:              413740
+    Reinsertion (CBMC)   total:            413740
+    Reinsertion (CBMC)   constructed:      370318
+    Reinsertion (CBMC)   accepted:           5912
+    Reinsertion (CBMC)   fraction:       0.014289
+    Reinsertion (CBMC)   max-change:     0.000000
+
+    Translation          all:              414438
+    Translation          total:            138565     138036     137837
+    Translation          constructed:      138565     138036     137766
+    Translation          accepted:          77530      66184      49715
+    Translation          fraction:       0.559521   0.479469   0.360680
+    Translation          max-change:     0.559140   0.718693   1.034483
+
+    Rotation             all:              413570
+    Rotation             total:            138070     137654     137846
+    Rotation             constructed:      137947     137599     137846
+    Rotation             accepted:          49921      53576      84200
+    Rotation             fraction:       0.361563   0.389208   0.610827
+    Rotation             max-change:     1.111111   1.009615   0.483871
+
+
+
+Production run counting of the MC moves summed over systems and components
+===============================================================================
+
+Volume change                          8252 (0.6602 [%])
+Reinsertion (CBMC)                   413740 (33.0992 [%])
+Translation                          414438 (33.1550 [%])
+Rotation                             413570 (33.0856 [%])
+
+Production count MC-steps:          1250000 [-]
+               All summed:          1250000 [-]
+               difference:                0 [-]
+
+
+Production run CPU timings of the MC moves
+===============================================================================
+
+Component 0 CO2
+
+Rotation                             59.934229 [s]
+    Ewald                            16.638216 [s]
+    ExternalField-Molecule            0.013366 [s]
+    Framework-Molecule                0.015477 [s]
+    Molecule-Molecule                41.873013 [s]
+    Overhead                          1.394157 [s]
+
+Reinsertion (CBMC)                  295.119937 [s]
+    Ewald                            14.932251 [s]
+    NonEwald                        279.789785 [s]
+    Overhead                          0.397901 [s]
+
+Translation                          60.187560 [s]
+    Ewald                            16.697400 [s]
+    ExternalField-Molecule            0.012866 [s]
+    Framework-Molecule                0.027040 [s]
+    Molecule-Molecule                42.056328 [s]
+    Overhead                          1.393926 [s]
+
+
+
+Volume change                         70.846118 [s]
+    Ewald                             15.395236 [s]
+    NonEwald                          52.712024 [s]
+    Tail                               2.440189 [s]
+
+Property sampling                     0.304824 [s]
+Energy/pressure sampling:             8.052103 [s]
+
+
+Production run CPU timings of the MC moves summed over systems and components
+===============================================================================
+
+
+Translation                          60.187560 [s]
+    Ewald                            16.697400 [s]
+    ExternalField-Molecule            0.012866 [s]
+    Framework-Molecule                0.027040 [s]
+    Molecule-Molecule                42.056328 [s]
+    Overhead                          1.393926 [s]
+
+Rotation                             59.934229 [s]
+    Ewald                            16.638216 [s]
+    ExternalField-Molecule            0.013366 [s]
+    Framework-Molecule                0.015477 [s]
+    Molecule-Molecule                41.873013 [s]
+    Overhead                          1.394157 [s]
+
+Volume change                        70.846118 [s]
+    Ewald                            15.395236 [s]
+    NonEwald                         52.712024 [s]
+    Tail                              2.440189 [s]
+    Overhead                          0.298669 [s]
+
+Reinsertion (CBMC)                  295.119937 [s]
+    Ewald                            14.932251 [s]
+    NonEwald                        279.789785 [s]
+    Overhead                          0.397901 [s]
+
+Property sampling:                    0.304824 [s]
+Energy/pressure sampling:             8.052103 [s]
+
+Production simulation time:         495.356255 [s]
+                All summed:         494.444771 [s]
+                  Overhead:           0.911484 [s]
+
+
+Initalization simulation time:       97.168887 [s]
+Equilibration simulation time:        0.000000 [s]
+Production simulation time:         495.356255 [s]
+Total simulation time:              592.525142 [s]
+
+
+Energy averages and statistics:
+===============================================================================
+
+Framework-molecule energy:
+-------------------------------------------------------------------------------
+
+
+
+Framework-molecule energy contributions per energy type:
+-------------------------------------------------------------------------------
+
+
+
+Inter-molecular energy:
+-------------------------------------------------------------------------------
+
+    Inter-molecular energy/kʙ 0-0 [CO2-CO2]:
+    ---------------------------------------------------------------------------
+        Block[  0] -3.736964e+05
+        Block[  1] -3.851804e+05
+        Block[  2] -3.834535e+05
+        Block[  3] -3.759452e+05
+        Block[  4] -3.791902e+05
+        -----------------------------------------------------------------------
+        Average  -3.794931e+05 +/-  6.028172e+03 [K]
+
+
+
+Inter-molecular energy contributions per energy type:
+-------------------------------------------------------------------------------
+
+    Van der Waals energy/kʙ 0-0 [CO2-CO2]:
+    ---------------------------------------------------------------------------
+        Block[  0] -2.722602e+05
+        Block[  1] -2.801118e+05
+        Block[  2] -2.785694e+05
+        Block[  3] -2.727328e+05
+        Block[  4] -2.754625e+05
+        -----------------------------------------------------------------------
+        Average  -2.758273e+05 +/-  4.314400e+03 [K]
+
+    VDW Tail-Correction energy/kʙ 0-0 [CO2-CO2]:
+    ---------------------------------------------------------------------------
+        Block[  0] -6.633678e+03
+        Block[  1] -6.784415e+03
+        Block[  2] -6.767894e+03
+        Block[  3] -6.638701e+03
+        Block[  4] -6.693334e+03
+        -----------------------------------------------------------------------
+        Average  -6.703605e+03 +/-  8.750161e+01 [K]
+
+    Coulomb Real energy/kʙ 0-0 [CO2-CO2]:
+    ---------------------------------------------------------------------------
+        Block[  0] -8.647749e+04
+        Block[  1] -8.975601e+04
+        Block[  2] -8.951253e+04
+        Block[  3] -8.805505e+04
+        Block[  4] -8.853220e+04
+        -----------------------------------------------------------------------
+        Average  -8.846666e+04 +/-  1.628969e+03 [K]
+
+    Coulomb Fourier energy/kʙ 0-0 [CO2-CO2]:
+    ---------------------------------------------------------------------------
+        Block[  0] -8.325057e+03
+        Block[  1] -8.528149e+03
+        Block[  2] -8.603634e+03
+        Block[  3] -8.518599e+03
+        Block[  4] -8.502223e+03
+        -----------------------------------------------------------------------
+        Average  -8.495532e+03 +/-  1.277993e+02 [K]
+
+
+Total energy/kʙ
+-------------------------------------------------------------------------------
+    Block[  0] -3.736964e+05
+    Block[  1] -3.851804e+05
+    Block[  2] -3.834535e+05
+    Block[  3] -3.759452e+05
+    Block[  4] -3.791902e+05
+    ---------------------------------------------------------------------------
+    Average  -3.794931e+05 +/-  6.028172e+03 [K]
+
+Pressure averages and statistics:
+===============================================================================
+
+Average pressure tensor: 
+-------------------------------------------------------------------------------
+ 8.3541e+01 -2.3297e+01  1.7478e+01 +/- 6.4407e+01 4.2523e+01 6.9904e+01 [bar]
+-2.3297e+01  2.2159e+01  1.3544e+01 +/- 4.2523e+01 2.5470e+01 3.0152e+01 [bar]
+ 1.7478e+01  1.3544e+01  2.4481e+01 +/- 6.9904e+01 3.0152e+01 2.5585e+01 [bar]
+
+    Block[  0]  4.932232e+07
+    Block[  1]  5.046286e+07
+    Block[  2]  5.025375e+07
+    Block[  3]  4.934520e+07
+    Block[  4]  4.980014e+07
+    ---------------------------------------------------------------------------
+    Ideal gas pressure   4.983686e+07 +/-  3.873067e-02 [Pa]
+                         4.983686e+02 +/-  6.431383e+00 [bar]
+
+
+    Block[  0] -4.113379e+07
+    Block[  1] -4.747164e+07
+    Block[  2] -4.665003e+07
+    Block[  3] -4.425073e+07
+    Block[  4] -4.798131e+07
+    ---------------------------------------------------------------------------
+    Excess pressure  -4.549750e+07 +/-  3.510913e+06 [Pa]
+                     -4.549750e+02 +/-  3.510913e+01 [bar]
+
+
+    Block[  0]  8.188529e+06
+    Block[  1]  2.991215e+06
+    Block[  2]  3.603725e+06
+    Block[  3]  5.094470e+06
+    Block[  4]  1.818823e+06
+    ---------------------------------------------------------------------------
+    Pressure average   4.339353e+06 +/-  3.047161e+06 [Pa]
+                       4.339353e+01 +/-  3.047161e+01 [bar]
+
+
+Enthalpy of adsorption
+===============================================================================
+
+No fluctuating components present.
+
+
+Densities
+===============================================================================
+
+Component 0 (CO2)
+    Block[  0] 250
+    Block[  1] 250
+    Block[  2] 250
+    Block[  3] 250
+    Block[  4] 250
+    -----------------------------------------------------------------------
+    Density average   2.500000e+02 +/-  0.000000e+00 [molecules]
+    Density average   1.443866e-02 +/-  1.863291e-04 [molec/A^3]
+    Density average   1.054913e+03 +/-  1.361352e+01 [kg.m⁻³]
+
