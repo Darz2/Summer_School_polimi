@@ -86,7 +86,21 @@ plt.plot(x_dev, dev, marker='o',
          linestyle='None',
          linewidth=ps.linewidth,
          color=ps.colors[-1],
-         label=r'Relative Deviation')
+         label=r'Liquid Phase')
+
+x_dev, dev = compute_relative_deviation(NIST[:,0], NIST[:,2], MC[:,0], MC[:,1])
+
+plt.plot(x_dev, dev, marker='o',
+         markersize=ps.markersize,
+         markerfacecolor=ps.face_colors[-2],
+         markeredgecolor='k',
+         markeredgewidth=ps.markeredgewidth,
+         linestyle='None',
+         linewidth=ps.linewidth,
+         color=ps.colors[-2],
+         label=r'Vapor Phase')
+
+plt.legend(fontsize=8, loc= 'upper right')
 
 plt.axhline(0, color='gray', linestyle='--', linewidth=1)
 plt.xlabel(rf"Pressure / [bar]", fontsize=12)
@@ -94,3 +108,42 @@ plt.ylabel(r"Relative Deviation / [%]", fontsize=12)
 # plt.xlim(0,33)
 # plt.ylim(-2,2)
 ps.save_figure(fig, "rel_dev_VLE.jpg")
+
+
+plt.clf()
+
+
+plt.plot(NIST[:,0], NIST[:,3], marker= 'o',
+                markersize=ps.markersize,
+                markerfacecolor=ps.face_colors[0],
+                markeredgecolor='k',
+                markeredgewidth=ps.markeredgewidth,
+                linestyle='solid',
+                linewidth= ps.linewidth,
+                color=ps.colors[0],
+                label=r'REFPROP',)
+
+plt.errorbar(MC[:, 0], MC[:, 5],
+             yerr=MC[:, 6],
+             fmt='o',
+             markersize=ps.markersize,
+             markerfacecolor=ps.face_colors[1],
+             markeredgecolor='k',
+             markeredgewidth=ps.markeredgewidth,
+             linestyle='solid',
+             linewidth=ps.linewidth,
+             color=ps.colors[1],
+             label=r'Monte Carlo')
+
+
+plt.xlabel(rf"Temperature / [K]",fontsize=12)
+plt.ylabel(rf"Pressure / [bar]",fontsize=12)
+plt.legend(fontsize=8, loc= 'upper left')
+# plt.xlim(0,33)
+# plt.ylim(0,20)
+# ax.yaxis.set_major_locator(MultipleLocator(10))
+# ax.yaxis.set_minor_locator(MultipleLocator(5))
+# ax.xaxis.set_major_locator(MultipleLocator(40))
+# ax.xaxis.set_minor_locator(MultipleLocator(20))
+   
+ps.save_figure(fig, f"VLE_CO2_Psat.jpg")

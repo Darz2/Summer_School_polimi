@@ -32,17 +32,18 @@ subprocess.call(bash_code, shell=True)
 
 for T in temperature:
         
-    density_liq = CP.PropsSI("D","T",T,"Q",0,"REFPROP::CO2")
-    density_vap = CP.PropsSI("D","T",T,"Q",1,"REFPROP::CO2")
+    density_liq      = CP.PropsSI("D","T",T,"Q",0,"REFPROP::CO2")
+    density_vap      = CP.PropsSI("D","T",T,"Q",1,"REFPROP::CO2")
+    Psat             = CP.PropsSI("P", "T", T, "Q", 0, "REFPROP::CO2")
     
     file_properties = os.path.join(os.getcwd(), f"NIST/CO2_VLE_NIST.dat")
     
     if not os.path.isfile(file_properties):
         with open(file_properties, "w") as file:
-            file.write("Temperature[K] Density_liq[kg/m3] Density_vap[kg/m3]\n")
-            file.write(f"{T:.1f} {density_liq:.4f} {density_vap:.4f}\n")
+            file.write("Temperature[K] Density_liq[kg/m3] Density_vap[kg/m3] Saturation-Pressure(bar)\n")
+            file.write(f"{T:.1f} {density_liq:.4f} {density_vap:.4f} {Psat/1e5:.4f}\n")
     else:
         with open(file_properties, "a") as file:
-            file.write(f"{T:.1f} {density_liq:.4f} {density_vap:.4f}\n")
+            file.write(f"{T:.1f} {density_liq:.4f} {density_vap:.4f} {Psat/1e5:.4f}\n")
                 
 #END
