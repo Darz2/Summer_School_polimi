@@ -19,7 +19,7 @@ CP.set_config_string(CP.ALTERNATIVE_REFPROP_PATH, refprop_path)
 # print("The speed of sound calulated in REFPROP using GERG 2008 EOS:  " + str(CP.PropsSI("A","T",313,"P",200e5,"REFPROP::Nitrogen")))
 
 ########### MODIFICATION SPACE ###################
-pressure = np.arange(40, 201, 20)
+pressure = np.arange(40, 201, 10)
 pressure = [x*1e5 for x in pressure]
 temperature = np.array([250])
 

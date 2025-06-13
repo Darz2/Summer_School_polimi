@@ -19,7 +19,7 @@ CP.set_config_string(CP.ALTERNATIVE_REFPROP_PATH, refprop_path)
 # print("The speed of sound calulated in REFPROP using GERG 2008 EOS:  " + str(CP.PropsSI("A","T",313,"P",200e5,"REFPROP::Nitrogen")))
 
 ########### MODIFICATION SPACE ###################
-temperature = np.array([220, 230, 240, 250, 260, 270, 280])
+temperature = np.arange(220, 281, 5)
 
 bash_code = '''
 if [ -d "NIST" ]; then

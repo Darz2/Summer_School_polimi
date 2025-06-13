@@ -2,7 +2,7 @@
 
 git init
 git add *
-git commit -m "README-pc-13/06/2025"
+git commit -m "Exercise files-creation"
 # git branch -M main
 # git remote add origin https://github.com/Darz2/Summer_School_polimi.git
 git push -u origin main
