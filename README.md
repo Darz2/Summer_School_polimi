@@ -21,15 +21,15 @@ Each participants will be assigned a temperature (in Kelvin)for VLE computation 
 
 | Participants | Temperature (K) |
 |--------------|------------------|
-| 1            | 225              |
-| 2            | 245              |
-| 3            | 265              |
-| 4            | 255              |
-| 5            | 230              |
-| 6            | 270              |
-| 7            | 240              |
-| 8            | 260              |
-| 9            | 220              |
-| 10           | 250              |
+| 1            | 260              |
+| 2            | 220              |
+| 3            | 250              |
+| 4            | 225              |
+| 5            | 280              |
+| 6            | 265              |
+| 7            | 255              |
+| 8            | 230              |
+| 9            | 270              |
+| 10           | 240              |
 
 If there are more participants this cycle will be repeated
