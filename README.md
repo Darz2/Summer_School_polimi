@@ -1,4 +1,4 @@
-### Example-1
+### Exercise-1
 
 Each participants will be assigned a pressure (in bar) at a constant temperature (T = 250 Kelvin) for density computation of CO₂ using a fixed cutoff radius of 12 Å.
 
@@ -15,7 +15,7 @@ Each participants will be assigned a pressure (in bar) at a constant temperature
 | 9            | 200            |
 | 10           | 40             |
 
-### Example-2
+### Exercise-2
 
 Each participants will be assigned a temperature (in Kelvin)for VLE computation of CO₂ using a fixed cutoff radius of 12 Å.
 
